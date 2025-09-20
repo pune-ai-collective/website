@@ -1,0 +1,488 @@
+/* Pune AI Collective - Responsive Stylesheet
+   Mobile-first approach with progressive enhancement
+   Breakpoints: Mobile (320px+), Tablet (768px+), Desktop (1024px+), Large (1200px+)
+*/
+
+/* Base styles are mobile-first in styles.css */
+/* This file contains media queries for larger screens */
+
+/* Small mobile devices (320px and up) - Base styles handled in styles.css */
+
+/* Large mobile devices and small tablets (480px and up) */
+@media screen and (min-width: 30rem) {
+    :root {
+        --font-size-hero: 2.75rem;     /* Slightly larger hero text */
+        --font-size-title: 2.25rem;    /* Larger section titles */
+        --spacing-huge: 5rem;          /* More generous spacing */
+    }
+    
+    .hero-title {
+        font-size: var(--font-size-hero);
+    }
+    
+    .section-title {
+        font-size: var(--font-size-title);
+    }
+    
+    .contact-links {
+        flex-direction: row;
+        justify-content: center;
+        gap: var(--spacing-xl);
+    }
+}
+
+/* Tablets (768px and up) */
+@media screen and (min-width: 48rem) {
+    :root {
+        --font-size-hero: 3.5rem;      /* Large hero text */
+        --font-size-title: 2.5rem;     /* Large section titles */
+        --spacing-huge: 6rem;          /* Even more generous spacing */
+    }
+    
+    /* Navigation adjustments for tablet */
+    .nav-container {
+        padding: 0 var(--spacing-xxl);
+    }
+    
+    .nav-menu {
+        gap: var(--spacing-xxl);
+    }
+    
+    /* Hero section adjustments */
+    .hero-section {
+        padding: var(--spacing-huge) var(--spacing-xxl);
+        min-height: 70vh;
+    }
+    
+    .hero-title {
+        font-size: var(--font-size-hero);
+        margin-bottom: var(--spacing-xl);
+    }
+    
+    /* Content sections */
+    .content-section {
+        padding: var(--spacing-huge) var(--spacing-xxl);
+    }
+    
+    .section-container {
+        max-width: 700px;
+    }
+    
+    /* Mission and vision text - better typography for larger screens */
+    .mission-text,
+    .vision-text {
+        font-size: var(--font-size-xl);
+        line-height: 1.8;
+    }
+    
+    /* Contact links - better spacing */
+    .contact-links {
+        gap: var(--spacing-xxl);
+    }
+    
+    .contact-link {
+        padding: var(--spacing-lg) var(--spacing-xl);
+        font-size: var(--font-size-large);
+    }
+    
+    /* Footer adjustments */
+    .footer-content {
+        justify-content: space-between;
+        text-align: left;
+    }
+    
+    .footer-links {
+        gap: var(--spacing-xl);
+    }
+}
+
+/* Small desktops (1024px and up) */
+@media screen and (min-width: 64rem) {
+    :root {
+        --font-size-hero: 4rem;        /* Maximum hero text size */
+        --spacing-huge: 8rem;          /* Maximum spacing */
+    }
+    
+    /* Navigation for desktop */
+    .navbar {
+        padding: var(--spacing-lg) 0;
+    }
+    
+    .nav-container {
+        padding: 0 var(--spacing-huge);
+    }
+    
+    /* Hero section for desktop */
+    .hero-section {
+        padding: var(--spacing-huge);
+        min-height: 80vh;
+    }
+    
+    .hero-container {
+        max-width: var(--content-max-width);
+    }
+    
+    .hero-title {
+        font-size: var(--font-size-hero);
+        margin-bottom: var(--spacing-xxl);
+    }
+    
+    .hero-subtitle {
+        font-size: var(--font-size-xxl);
+        margin-bottom: var(--spacing-xxl);
+    }
+    
+    /* Content sections for desktop */
+    .content-section {
+        padding: var(--spacing-huge);
+    }
+    
+    .section-container {
+        max-width: var(--content-max-width);
+    }
+    
+    .section-header {
+        margin-bottom: var(--spacing-xxl);
+    }
+    
+    /* Enhanced typography for desktop */
+    .mission-text,
+    .vision-text {
+        font-size: var(--font-size-xl);
+        line-height: 1.9;
+        max-width: 650px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    /* Better contact section layout */
+    .contact-text {
+        font-size: var(--font-size-xl);
+        max-width: 600px;
+        margin: 0 auto var(--spacing-xxl);
+    }
+    
+    /* Enhanced hover effects for desktop */
+    .cta-button:hover,
+    .cta-button:focus {
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        transform: translateY(-2px);
+    }
+    
+    .contact-link:hover,
+    .contact-link:focus {
+        box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
+        transform: translateY(-3px);
+    }
+}
+
+/* Large desktops (1200px and up) */
+@media screen and (min-width: 75rem) {
+    /* Container adjustments for very large screens */
+    .nav-container,
+    .footer-container {
+        max-width: var(--container-max-width);
+    }
+    
+    /* Prevent hero from getting too large */
+    .hero-section {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    
+    /* Content sections with better max-width */
+    .section-container {
+        max-width: 900px;
+    }
+    
+    .mission-text,
+    .vision-text {
+        max-width: 700px;
+    }
+}
+
+/* Ultra-wide screens (1600px and up) */
+@media screen and (min-width: 100rem) {
+    /* Prevent content from stretching too wide */
+    .hero-section {
+        max-width: 1600px;
+    }
+    
+    .content-section {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+}
+
+/* Mobile-specific adjustments */
+@media screen and (max-width: 47.9375rem) {
+    /* Hide desktop navigation, show mobile menu toggle */
+    .mobile-menu-toggle {
+        display: flex;
+        z-index: calc(var(--z-navigation) + 1);
+    }
+    
+    /* Mobile navigation menu */
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--background-color);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: var(--spacing-xxl);
+        transform: translateX(-100%);
+        transition: transform var(--transition-speed) var(--transition-timing);
+        z-index: var(--z-navigation);
+        border-right: 1px solid var(--border-color);
+        overflow-y: auto;
+        padding: var(--spacing-xxl) var(--spacing-lg);
+    }
+    
+    .nav-menu.is-open {
+        transform: translateX(0);
+    }
+    
+    .nav-link {
+        font-size: var(--font-size-xl);
+        font-weight: var(--font-weight-medium);
+    }
+
+    /* Mobile dropdown handling */
+    .nav-item.has-dropdown {
+        width: 100%;
+        text-align: center;
+    }
+
+    .dropdown-menu {
+        position: static;
+        width: 100%;
+        background-color: var(--accent-color);
+        border: none;
+        box-shadow: none;
+        transform: none;
+        opacity: 0;
+        visibility: hidden;
+        max-height: 0;
+        overflow: hidden;
+        transition: all var(--transition-speed) var(--transition-timing);
+        margin-top: var(--spacing-md);
+    }
+
+    .nav-item.has-dropdown.active .dropdown-menu,
+    .nav-item.has-dropdown:hover .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        max-height: 200px;
+        padding: var(--spacing-md) 0;
+    }
+
+    .dropdown-link {
+        justify-content: center;
+        gap: var(--spacing-sm);
+        font-size: var(--font-size-large);
+        padding: var(--spacing-md);
+    }
+    
+    /* Adjust social icons for mobile */
+    .social-icons {
+        position: fixed;
+        bottom: var(--spacing-xxl);
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: calc(var(--z-navigation) + 1);
+        background-color: var(--background-color);
+        padding: var(--spacing-md);
+        border-radius: var(--border-radius);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        opacity: 0;
+        visibility: hidden;
+        transition: all var(--transition-speed) var(--transition-timing);
+    }
+    
+    .nav-menu.is-open ~ .social-icons {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    /* Mobile hamburger animation */
+    .mobile-menu-toggle[aria-expanded="true"] .hamburger-line:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+    }
+    
+    .mobile-menu-toggle[aria-expanded="true"] .hamburger-line:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .mobile-menu-toggle[aria-expanded="true"] .hamburger-line:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
+    }
+    
+    /* Mobile content adjustments */
+    .hero-section {
+        padding: var(--spacing-xxl) var(--spacing-lg);
+        min-height: 50vh;
+    }
+    
+    .content-section {
+        padding: var(--spacing-xxl) var(--spacing-lg);
+    }
+    
+    .section-container {
+        max-width: none;
+    }
+    
+    /* Mobile typography adjustments */
+    .hero-title {
+        font-size: 2.25rem;
+        line-height: 1.1;
+    }
+    
+    .hero-subtitle {
+        font-size: var(--font-size-large);
+    }
+    
+    .section-title {
+        font-size: 1.75rem;
+    }
+    
+    .mission-text,
+    .vision-text {
+        font-size: var(--font-size-base);
+        text-align: center;
+    }
+    
+    /* Mobile meetup stats */
+    .meetup-stats {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-lg);
+    }
+    
+    .stat-item {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    /* Mobile contact links */
+    .contact-links {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-lg);
+    }
+    
+    .contact-link {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+        padding: var(--spacing-lg);
+    }
+    
+    /* Mobile footer */
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: var(--spacing-md);
+    }
+    
+    .footer-links {
+        justify-content: center;
+        gap: var(--spacing-md);
+    }
+}
+
+/* High DPI / Retina displays */
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+       screen and (min-resolution: 192dpi),
+       screen and (min-resolution: 2dppx) {
+    /* Enhanced font smoothing for high DPI displays */
+    body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+    
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    
+    /* Remove transforms that might cause motion */
+    .social-icon:hover,
+    .social-icon:focus,
+    .cta-button:hover,
+    .cta-button:focus,
+    .contact-link:hover,
+    .contact-link:focus {
+        transform: none;
+    }
+}
+
+/* Dark mode support (if system preference) */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary-color: #ffffff;
+        --secondary-color: #cccccc;
+        --background-color: #1a1a1a;
+        --accent-color: #2a2a2a;
+        --border-color: #333333;
+        --text-light: #888888;
+    }
+    
+    .navbar {
+        border-bottom-color: var(--border-color);
+    }
+    
+    .skip-link {
+        background: var(--background-color);
+        color: var(--primary-color);
+    }
+    
+    .site-footer {
+        background-color: #000000;
+    }
+}
+
+/* Print-specific responsive adjustments */
+@media print {
+    /* Ensure good print layout regardless of screen size */
+    .hero-section,
+    .content-section {
+        padding: 1rem;
+        max-width: none;
+    }
+    
+    .nav-container,
+    .section-container,
+    .footer-container {
+        max-width: none;
+        padding: 0;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .mission-text,
+    .vision-text {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+}

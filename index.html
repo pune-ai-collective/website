@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pune AI Collective - AI Innovation Community</title>
+    <meta name="description" content="Pune AI Collective - Where AI minds meet, innovate, and grow. Join our community for knowledge sharing, collaborative projects, and skill development in artificial intelligence.">
+    <meta name="keywords" content="AI, Artificial Intelligence, Pune, Community, Innovation, Technology, Machine Learning">
+    <meta name="author" content="Pune AI Collective">
+    
+    <!-- Open Graph meta tags for social media sharing -->
+    <meta property="og:title" content="Pune AI Collective - AI Innovation Community">
+    <meta property="og:description" content="Where AI minds meet, innovate, and grow. Join Pune's AI community for knowledge sharing, collaborative projects, and skill development.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://puneaicollective.org">
+    
+    <!-- Twitter Card meta tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Pune AI Collective - AI Innovation Community">
+    <meta name="twitter:description" content="Where AI minds meet, innovate, and grow. Join Pune's AI community for knowledge sharing, collaborative projects, and skill development.">
+    
+    <!-- Preconnect to external resources for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Google Fonts - Helvetica-like typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" 
+          integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <!-- Custom stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="#home" class="nav-logo" aria-label="Pune AI Collective Home">
+                    Pune AI Collective
+                </a>
+            </div>
+            
+            <!-- Mobile menu toggle -->
+            <button class="mobile-menu-toggle" 
+                    aria-label="Toggle mobile menu" 
+                    aria-expanded="false"
+                    aria-controls="nav-menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <!-- Navigation menu -->
+            <ul class="nav-menu" id="nav-menu" role="menubar">
+                <li class="nav-item" role="none">
+                    <a href="#mission" class="nav-link" role="menuitem">Mission</a>
+                </li>
+                <li class="nav-item" role="none">
+                    <a href="#vision" class="nav-link" role="menuitem">Vision</a>
+                </li>
+                <li class="nav-item has-dropdown" role="none">
+                    <a href="#meetups" class="nav-link" role="menuitem" aria-expanded="false" aria-haspopup="true">
+                        Meetups
+                        <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-label="Meetups submenu">
+                        <li class="dropdown-item" role="none">
+                            <a href="#meetups" class="dropdown-link" role="menuitem">All Meetups</a>
+                        </li>
+                        <li class="dropdown-item" role="none">
+                            <a href="assets/Monsoon-meetup-blog.pdf" class="dropdown-link" role="menuitem" target="_blank" rel="noopener noreferrer">
+                                Monsoon Meetup Blog
+                                <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item" role="none">
+                    <a href="#contact" class="nav-link" role="menuitem">Contact</a>
+                </li>
+            </ul>
+            
+            <!-- Social media links -->
+            <div class="social-icons" role="complementary" aria-label="Social media links">
+                <a href="https://www.linkedin.com/groups/11802260/" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="social-icon linkedin-icon" 
+                   aria-label="Join our LinkedIn group (opens in new tab)">
+                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a href="https://chat.whatsapp.com/JKVSE67goMv2baHH4RYkDl" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="social-icon whatsapp-icon" 
+                   aria-label="Join our WhatsApp group (opens in new tab)">
+                    <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                </a>
+                <a href="https://github.com/pune-ai-collective" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="social-icon github-icon" 
+                   aria-label="Visit our GitHub organization (opens in new tab)">
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Main content -->
+    <main id="main-content" role="main">
+        <!-- Hero section -->
+        <section class="hero-section" id="home" aria-labelledby="hero-heading">
+            <div class="hero-container">
+                <h1 id="hero-heading" class="hero-title">
+                    Pune AI Collective
+                </h1>
+                <p class="hero-subtitle">
+                    Where AI Minds Meet, Innovate, and Grow
+                </p>
+                <div class="hero-cta">
+                    <a href="#mission" class="cta-button primary" aria-describedby="mission-description">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Mission section -->
+        <section class="content-section mission-section" id="mission" aria-labelledby="mission-heading">
+            <div class="section-container">
+                <header class="section-header">
+                    <h2 id="mission-heading" class="section-title">Our Mission</h2>
+                </header>
+                <div class="section-content">
+                    <p class="mission-text" id="mission-description">
+                        To empower Pune's AI community by facilitating knowledge sharing, collaborative projects, and skill development through accessible events and resources, enabling members to innovate, grow professionally, and apply AI solutions that address local and global needs.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Vision section -->
+        <section class="content-section vision-section" id="vision" aria-labelledby="vision-heading">
+            <div class="section-container">
+                <header class="section-header">
+                    <h2 id="vision-heading" class="section-title">Our Vision</h2>
+                </header>
+                <div class="section-content">
+                    <p class="vision-text">
+                        To establish Pune as a globally recognized epicenter of AI innovation, where a thriving ecosystem of diverse talents propels groundbreaking advancements, inspires the next generation of AI leaders, and positions the city at the forefront of technological transformation.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Meetups section -->
+        <section class="content-section meetups-section" id="meetups" aria-labelledby="meetups-heading">
+            <div class="section-container">
+                <header class="section-header">
+                    <h2 id="meetups-heading" class="section-title">Our Meetups</h2>
+                </header>
+                <div class="section-content">
+                    <p class="meetups-text">
+                        We organize regular meetups to bring together AI enthusiasts, researchers, and professionals in Pune. Join us to learn, network, and collaborate on cutting-edge AI projects and innovations.
+                    </p>
+                    <div class="meetups-info">
+                        <div class="meetup-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">1</span>
+                                <span class="stat-label">Meetup Completed</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">More</span>
+                                <span class="stat-label">Coming Soon</span>
+                            </div>
+                        </div>
+                        <div class="meetup-cta">
+                            <a href="https://github.com/pune-ai-collective" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="cta-button secondary" 
+                               aria-label="View our meetup materials on GitHub (opens in new tab)">
+                                View Meetup Materials
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact section -->
+        <section class="content-section contact-section" id="contact" aria-labelledby="contact-heading">
+            <div class="section-container">
+                <header class="section-header">
+                    <h2 id="contact-heading" class="section-title">Connect With Us</h2>
+                </header>
+                <div class="section-content">
+                    <p class="contact-text">
+                        Join our growing community of AI enthusiasts, researchers, and professionals. Connect with us through our social channels to stay updated on events, opportunities, and collaborations.
+                    </p>
+                    <div class="contact-links">
+                        <a href="https://www.linkedin.com/groups/11802260/" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           class="contact-link linkedin-link" 
+                           aria-label="Join our LinkedIn group (opens in new tab)">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
+                            <span>LinkedIn Group</span>
+                        </a>
+                        <a href="https://chat.whatsapp.com/JKVSE67goMv2baHH4RYkDl" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           class="contact-link whatsapp-link" 
+                           aria-label="Join our WhatsApp group (opens in new tab)">
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                            <span>WhatsApp Community</span>
+                        </a>
+                        <a href="https://github.com/pune-ai-collective" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           class="contact-link github-link" 
+                           aria-label="Visit our GitHub organization (opens in new tab)">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                            <span>GitHub Projects</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-content">
+                <p class="footer-text">
+                    &copy; 2025 Pune AI Collective. Where AI minds meet, innovate, and grow.
+                </p>
+                <div class="footer-links">
+                    <a href="#mission" class="footer-link">Mission</a>
+                    <a href="#vision" class="footer-link">Vision</a>
+                    <a href="#meetups" class="footer-link">Meetups</a>
+                    <a href="#contact" class="footer-link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript files loaded at end for performance -->
+    <script src="js/main.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/social-integration.js"></script>
+</body>
+</html>

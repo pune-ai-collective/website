@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility Testing - Pune AI Collective</title>
+    <meta name="description" content="Manual accessibility testing page for the Pune AI Collective website">
+    
+    <style>
+        /* Minimal styling for testing page */
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            line-height: 1.6;
+        }
+        
+        .test-section {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 0.25rem;
+        }
+        
+        .test-result {
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            border-radius: 0.25rem;
+        }
+        
+        .pass {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .fail {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        
+        .warning {
+            background-color: #fff3cd;
+            color: #856404;
+            border: 1px solid #ffeaa7;
+        }
+        
+        .checklist {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .checklist li {
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            background-color: #f8f9fa;
+            border-left: 4px solid #007bff;
+        }
+        
+        .checklist input[type="checkbox"] {
+            margin-right: 0.5rem;
+        }
+        
+        code {
+            background-color: #f8f9fa;
+            padding: 0.2rem 0.4rem;
+            border-radius: 0.25rem;
+            font-family: monospace;
+        }
+        
+        .keyboard-test {
+            padding: 1rem;
+            border: 2px dashed #007bff;
+            margin: 1rem 0;
+        }
+        
+        .focus-test {
+            margin: 0.5rem;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Accessibility Testing for Pune AI Collective Website</h1>
+        <p>This page provides manual accessibility testing guidelines and automated test runners for WCAG 2.1 AA compliance.</p>
+        <p><strong>Target:</strong> <a href="../index.html" target="_blank">Pune AI Collective Website</a></p>
+    </header>
+    
+    <main>
+        <!-- Keyboard Navigation Testing -->
+        <section class="test-section">
+            <h2>1. Keyboard Navigation Testing</h2>
+            <p>Test keyboard accessibility using only the Tab, Shift+Tab, Enter, Space, and Arrow keys.</p>
+            
+            <div class="keyboard-test">
+                <h3>Keyboard Navigation Test Area</h3>
+                <p>Use Tab to navigate through these elements:</p>
+                <a href="#test" class="focus-test">Test Link 1</a>
+                <button class="focus-test">Test Button</button>
+                <input type="text" placeholder="Test Input" class="focus-test">
+                <a href="#test2" class="focus-test">Test Link 2</a>
+            </div>
+            
+            <ul class="checklist">
+                <li><input type="checkbox" id="kb1"> All interactive elements are reachable with Tab key</li>
+                <li><input type="checkbox" id="kb2"> Tab order is logical (left to right, top to bottom)</li>
+                <li><input type="checkbox" id="kb3"> Focus indicators are visible on all focusable elements</li>
+                <li><input type="checkbox" id="kb4"> Navigation links work with Enter key</li>
+                <li><input type="checkbox" id="kb5"> Mobile menu opens/closes with Enter and Escape keys</li>
+                <li><input type="checkbox" id="kb6"> Skip links work properly</li>
+                <li><input type="checkbox" id="kb7"> No keyboard traps (can exit any element)</li>
+            </ul>
+        </section>
+        
+        <!-- Screen Reader Testing -->
+        <section class="test-section">
+            <h2>2. Screen Reader Testing</h2>
+            <p>Test with screen reader software (NVDA, JAWS, VoiceOver, or Orca).</p>
+            
+            <ul class="checklist">
+                <li><input type="checkbox" id="sr1"> Page title is announced correctly</li>
+                <li><input type="checkbox" id="sr2"> Headings structure makes sense (H1 → H2 → H3)</li>
+                <li><input type="checkbox" id="sr3"> Landmark regions are identified (nav, main, footer)</li>
+                <li><input type="checkbox" id="sr4"> Link purposes are clear from text or aria-label</li>
+                <li><input type="checkbox" id="sr5"> Form labels are associated with inputs</li>
+                <li><input type="checkbox" id="sr6"> Images have appropriate alt text or aria-hidden</li>
+                <li><input type="checkbox" id="sr7"> Dynamic content changes are announced</li>
+                <li><input type="checkbox" id="sr8"> Social media links have descriptive labels</li>
+            </ul>
+        </section>
+        
+        <!-- Color and Contrast Testing -->
+        <section class="test-section">
+            <h2>3. Color and Contrast Testing</h2>
+            <p>Verify color contrast ratios meet WCAG AA standards (4.5:1 for normal text, 3:1 for large text).</p>
+            
+            <ul class="checklist">
+                <li><input type="checkbox" id="cc1"> Body text has sufficient contrast ratio (4.5:1)</li>
+                <li><input type="checkbox" id="cc2"> Heading text has sufficient contrast ratio</li>
+                <li><input type="checkbox" id="cc3"> Link text has sufficient contrast ratio</li>
+                <li><input type="checkbox" id="cc4"> Button text has sufficient contrast ratio</li>
+                <li><input type="checkbox" id="cc5"> Focus indicators have sufficient contrast</li>
+                <li><input type="checkbox" id="cc6"> Information is not conveyed by color alone</li>
+                <li><input type="checkbox" id="cc7"> Site works with high contrast mode</li>
+            </ul>
+            
+            <div class="test-result">
+                <p><strong>Automated Test:</strong> <button onclick="testContrast()">Run Contrast Analysis</button></p>
+                <div id="contrast-results"></div>
+            </div>
+        </section>
+        
+        <!-- Mobile Accessibility Testing -->
+        <section class="test-section">
+            <h2>4. Mobile Accessibility Testing</h2>
+            <p>Test touch accessibility on mobile devices and screen orientations.</p>
+            
+            <ul class="checklist">
+                <li><input type="checkbox" id="mob1"> Touch targets are at least 44px × 44px</li>
+                <li><input type="checkbox" id="mob2"> Content reflows properly in portrait/landscape</li>
+                <li><input type="checkbox" id="mob3"> Text is readable without horizontal scrolling</li>
+                <li><input type="checkbox" id="mob4"> Mobile menu is accessible via touch and screen reader</li>
+                <li><input type="checkbox" id="mob5"> Zoom to 200% works without horizontal scrolling</li>
+                <li><input type="checkbox" id="mob6"> All functionality available in both orientations</li>
+            </ul>
+        </section>
+        
+        <!-- ARIA and Semantic HTML Testing -->
+        <section class="test-section">
+            <h2>5. ARIA and Semantic HTML Testing</h2>
+            <p>Verify proper semantic structure and ARIA implementation.</p>
+            
+            <ul class="checklist">
+                <li><input type="checkbox" id="aria1"> Proper heading hierarchy (no skipped levels)</li>
+                <li><input type="checkbox" id="aria2"> Semantic HTML elements used appropriately</li>
+                <li><input type="checkbox" id="aria3"> ARIA labels provide additional context where needed</li>
+                <li><input type="checkbox" id="aria4"> ARIA live regions announce dynamic changes</li>
+                <li><input type="checkbox" id="aria5"> Form controls have proper labels or descriptions</li>
+                <li><input type="checkbox" id="aria6"> Button roles and states are correct</li>
+                <li><input type="checkbox" id="aria7"> Navigation menu has proper ARIA attributes</li>
+            </ul>
+            
+            <div class="test-result">
+                <p><strong>Automated Test:</strong> <button onclick="testARIA()">Analyze ARIA Implementation</button></p>
+                <div id="aria-results"></div>
+            </div>
+        </section>
+        
+        <!-- Performance Impact on Accessibility -->
+        <section class="test-section">
+            <h2>6. Performance Impact on Accessibility</h2>
+            <p>Ensure performance optimizations don't hurt accessibility.</p>
+            
+            <ul class="checklist">
+                <li><input type="checkbox" id="perf1"> Lazy-loaded content is announced to screen readers</li>
+                <li><input type="checkbox" id="perf2"> Animations respect prefers-reduced-motion</li>
+                <li><input type="checkbox" id="perf3"> Focus management works with dynamic content</li>
+                <li><input type="checkbox" id="perf4"> Loading states are accessible</li>
+                <li><input type="checkbox" id="perf5"> Error states are properly announced</li>
+            </ul>
+        </section>
+        
+        <!-- Automated Testing Tools -->
+        <section class="test-section">
+            <h2>7. Automated Testing Tools</h2>
+            <p>Run automated accessibility tests using various tools.</p>
+            
+            <div class="test-result">
+                <h3>Browser Extension Tests</h3>
+                <ul>
+                    <li><strong>axe DevTools:</strong> <a href="https://www.deque.com/axe/browser-extensions/" target="_blank">Install Extension</a></li>
+                    <li><strong>WAVE:</strong> <a href="https://wave.webaim.org/extension/" target="_blank">Install Extension</a></li>
+                    <li><strong>Lighthouse:</strong> Built into Chrome DevTools</li>
+                </ul>
+            </div>
+            
+            <div class="test-result">
+                <h3>Command Line Tools</h3>
+                <pre><code># Install axe-core CLI
+npm install -g @axe-core/cli
+
+# Run accessibility audit
+axe ../index.html --exit
+
+# Install Lighthouse CLI
+npm install -g lighthouse
+
+# Run Lighthouse accessibility audit
+lighthouse ../index.html --only-categories=accessibility --view</code></pre>
+            </div>
+            
+            <div class="test-result">
+                <h3>Online Testing Tools</h3>
+                <ul>
+                    <li><a href="https://www.webaccessibility.com/" target="_blank">Web Accessibility Checker</a></li>
+                    <li><a href="https://wave.webaim.org/" target="_blank">WAVE Web Accessibility Evaluation Tool</a></li>
+                    <li><a href="https://achecker.ca/" target="_blank">AChecker Web Accessibility Checker</a></li>
+                </ul>
+            </div>
+        </section>
+        
+        <!-- Test Results Summary -->
+        <section class="test-section">
+            <h2>8. Test Results Summary</h2>
+            <div id="test-summary">
+                <p><button onclick="generateSummary()">Generate Test Summary</button></p>
+                <div id="summary-results"></div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Last updated: <span id="last-updated"></span></p>
+        <p><a href="../index.html">← Back to Website</a></p>
+    </footer>
+    
+    <script>
+        // Set last updated date
+        document.getElementById('last-updated').textContent = new Date().toLocaleDateString();
+        
+        // Contrast testing function
+        function testContrast() {
+            const results = document.getElementById('contrast-results');
+            results.innerHTML = `
+                <div class="test-result pass">
+                    <h4>Automated Contrast Analysis</h4>
+                    <p><strong>Recommendation:</strong> Use browser extensions or tools like:</p>
+                    <ul>
+                        <li>Chrome DevTools Accessibility panel</li>
+                        <li>Colour Contrast Analyser (CCA)</li>
+                        <li>WebAIM Contrast Checker</li>
+                    </ul>
+                    <p>Manual verification required for all color combinations used on the site.</p>
+                </div>
+            `;
+        }
+        
+        // ARIA testing function
+        function testARIA() {
+            const results = document.getElementById('aria-results');
+            results.innerHTML = `
+                <div class="test-result warning">
+                    <h4>ARIA Analysis</h4>
+                    <p><strong>Manual verification needed for:</strong></p>
+                    <ul>
+                        <li>Navigation menu ARIA attributes</li>
+                        <li>Mobile menu toggle states</li>
+                        <li>Social media link descriptions</li>
+                        <li>Live region announcements</li>
+                    </ul>
+                    <p>Use axe DevTools or WAVE for detailed ARIA analysis.</p>
+                </div>
+            `;
+        }
+        
+        // Generate test summary
+        function generateSummary() {
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            const total = checkboxes.length;
+            const completed = Array.from(checkboxes).filter(cb => cb.checked).length;
+            const percentage = Math.round((completed / total) * 100);
+            
+            const summaryResults = document.getElementById('summary-results');
+            summaryResults.innerHTML = `
+                <div class="test-result ${percentage >= 90 ? 'pass' : percentage >= 70 ? 'warning' : 'fail'}">
+                    <h3>Accessibility Test Summary</h3>
+                    <p><strong>Completed:</strong> ${completed} / ${total} tests (${percentage}%)</p>
+                    <p><strong>Status:</strong> 
+                        ${percentage >= 90 ? 'Excellent - Ready for production' : 
+                          percentage >= 70 ? 'Good - Minor improvements needed' : 
+                          'Needs improvement - Address failing tests'}
+                    </p>
+                    <p><strong>Generated:</strong> ${new Date().toLocaleString()}</p>
+                </div>
+            `;
+        }
+        
+        // Auto-save checkbox states to localStorage
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach(checkbox => {
+            // Load saved state
+            const saved = localStorage.getItem('accessibility-test-' + checkbox.id);
+            if (saved === 'true') {
+                checkbox.checked = true;
+            }
+            
+            // Save state on change
+            checkbox.addEventListener('change', function() {
+                localStorage.setItem('accessibility-test-' + checkbox.id, checkbox.checked);
+            });
+        });
+        
+        console.log('Accessibility testing page loaded');
+    </script>
+</body>
+</html>

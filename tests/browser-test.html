@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Compatibility Testing - Pune AI Collective</title>
+    <meta name="description" content="Cross-browser compatibility testing page for the Pune AI Collective website">
+    
+    <style>
+        /* Testing page styles */
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            line-height: 1.6;
+        }
+        
+        .test-section {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 0.25rem;
+        }
+        
+        .browser-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        
+        .browser-card {
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 0.25rem;
+            background-color: #f8f9fa;
+        }
+        
+        .test-result {
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            border-radius: 0.25rem;
+        }
+        
+        .pass {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .fail {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        
+        .warning {
+            background-color: #fff3cd;
+            color: #856404;
+            border: 1px solid #ffeaa7;
+        }
+        
+        .info {
+            background-color: #d1ecf1;
+            color: #0c5460;
+            border: 1px solid #bee5eb;
+        }
+        
+        .feature-test {
+            margin: 1rem 0;
+            padding: 1rem;
+            border: 2px solid #007bff;
+            border-radius: 0.25rem;
+        }
+        
+        .viewport-test {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        
+        .viewport-item {
+            flex: 1;
+            min-width: 200px;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        
+        .checklist {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .checklist li {
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            background-color: #f8f9fa;
+            border-left: 4px solid #007bff;
+        }
+        
+        .checklist input[type="checkbox"] {
+            margin-right: 0.5rem;
+        }
+        
+        code {
+            background-color: #f8f9fa;
+            padding: 0.2rem 0.4rem;
+            border-radius: 0.25rem;
+            font-family: monospace;
+        }
+        
+        .detection-info {
+            background-color: #f8f9fa;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 0.25rem;
+        }
+        
+        .test-button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 0.25rem;
+            cursor: pointer;
+            margin: 0.25rem;
+        }
+        
+        .test-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cross-Browser Compatibility Testing</h1>
+        <p>Comprehensive browser compatibility testing for the Pune AI Collective website.</p>
+        <p><strong>Target:</strong> <a href="../index.html" target="_blank">Pune AI Collective Website</a></p>
+    </header>
+    
+    <main>
+        <!-- Browser Detection -->
+        <section class="test-section">
+            <h2>1. Browser Detection</h2>
+            <div class="detection-info" id="browser-info">
+                <p>Detecting current browser...</p>
+            </div>
+            
+            <button class="test-button" onclick="detectBrowser()">Update Browser Detection</button>
+        </section>
+        
+        <!-- Target Browser Matrix -->
+        <section class="test-section">
+            <h2>2. Target Browser Matrix</h2>
+            <p>Test the website in these target browsers for compatibility:</p>
+            
+            <div class="browser-grid">
+                <div class="browser-card">
+                    <h3>Chrome</h3>
+                    <p><strong>Versions:</strong> 90+</p>
+                    <p><strong>Market Share:</strong> ~65%</p>
+                    <ul class="checklist">
+                        <li><input type="checkbox" id="chrome-desktop"> Desktop</li>
+                        <li><input type="checkbox" id="chrome-mobile"> Mobile</li>
+                        <li><input type="checkbox" id="chrome-tablet"> Tablet</li>
+                    </ul>
+                </div>
+                
+                <div class="browser-card">
+                    <h3>Firefox</h3>
+                    <p><strong>Versions:</strong> 85+</p>
+                    <p><strong>Market Share:</strong> ~8%</p>
+                    <ul class="checklist">
+                        <li><input type="checkbox" id="firefox-desktop"> Desktop</li>
+                        <li><input type="checkbox" id="firefox-mobile"> Mobile</li>
+                        <li><input type="checkbox" id="firefox-tablet"> Tablet</li>
+                    </ul>
+                </div>
+                
+                <div class="browser-card">
+                    <h3>Safari</h3>
+                    <p><strong>Versions:</strong> 14+</p>
+                    <p><strong>Market Share:</strong> ~19%</p>
+                    <ul class="checklist">
+                        <li><input type="checkbox" id="safari-desktop"> Desktop (macOS)</li>
+                        <li><input type="checkbox" id="safari-mobile"> Mobile (iOS)</li>
+                        <li><input type="checkbox" id="safari-tablet"> Tablet (iPadOS)</li>
+                    </ul>
+                </div>
+                
+                <div class="browser-card">
+                    <h3>Edge</h3>
+                    <p><strong>Versions:</strong> 90+</p>
+                    <p><strong>Market Share:</strong> ~4%</p>
+                    <ul class="checklist">
+                        <li><input type="checkbox" id="edge-desktop"> Desktop</li>
+                        <li><input type="checkbox" id="edge-mobile"> Mobile</li>
+                        <li><input type="checkbox" id="edge-tablet"> Tablet</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Feature Support Testing -->
+        <section class="test-section">
+            <h2>3. Feature Support Testing</h2>
+            <p>Verify that modern web features work across target browsers:</p>
+            
+            <div class="feature-test">
+                <h3>CSS Features</h3>
+                <div id="css-features-results">
+                    <button class="test-button" onclick="testCSSFeatures()">Test CSS Support</button>
+                </div>
+            </div>
+            
+            <div class="feature-test">
+                <h3>JavaScript Features</h3>
+                <div id="js-features-results">
+                    <button class="test-button" onclick="testJSFeatures()">Test JavaScript Support</button>
+                </div>
+            </div>
+            
+            <div class="feature-test">
+                <h3>API Support</h3>
+                <div id="api-features-results">
+                    <button class="test-button" onclick="testAPIFeatures()">Test API Support</button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Responsive Design Testing -->
+        <section class="test-section">
+            <h2>4. Responsive Design Testing</h2>
+            <p>Test layout and functionality across different viewport sizes:</p>
+            
+            <div class="viewport-test">
+                <div class="viewport-item">
+                    <h4>Mobile Portrait</h4>
+                    <p>320px - 480px width</p>
+                    <input type="checkbox" id="mobile-portrait"> Tested
+                </div>
+                <div class="viewport-item">
+                    <h4>Mobile Landscape</h4>
+                    <p>481px - 768px width</p>
+                    <input type="checkbox" id="mobile-landscape"> Tested
+                </div>
+                <div class="viewport-item">
+                    <h4>Tablet Portrait</h4>
+                    <p>769px - 1024px width</p>
+                    <input type="checkbox" id="tablet-portrait"> Tested
+                </div>
+                <div class="viewport-item">
+                    <h4>Desktop</h4>
+                    <p>1025px+ width</p>
+                    <input type="checkbox" id="desktop"> Tested
+                </div>
+            </div>
+            
+            <div class="test-result">
+                <h4>Viewport Testing Tools</h4>
+                <ul>
+                    <li>Chrome DevTools Device Toolbar (F12 → Toggle Device Toolbar)</li>
+                    <li>Firefox Responsive Design Mode (F12 → Responsive Design Mode)</li>
+                    <li>Safari Web Inspector (Develop → Responsive Design Mode)</li>
+                    <li>Online: <a href="https://responsivedesignchecker.com/" target="_blank">Responsive Design Checker</a></li>
+                </ul>
+            </div>
+        </section>
+        
+        <!-- Performance Testing -->
+        <section class="test-section">
+            <h2>5. Performance Testing Across Browsers</h2>
+            <p>Verify performance metrics in different browsers:</p>
+            
+            <ul class="checklist">
+                <li><input type="checkbox" id="perf-chrome"> Chrome: Page load < 3s, Lighthouse score 90+</li>
+                <li><input type="checkbox" id="perf-firefox"> Firefox: Page load < 3s, smooth animations</li>
+                <li><input type="checkbox" id="perf-safari"> Safari: Page load < 3s, proper font rendering</li>
+                <li><input type="checkbox" id="perf-edge"> Edge: Page load < 3s, CSS Grid support</li>
+                <li><input type="checkbox" id="perf-mobile"> Mobile: Touch interactions responsive</li>
+            </ul>
+            
+            <div class="test-result">
+                <button class="test-button" onclick="measurePerformance()">Measure Current Performance</button>
+                <div id="performance-results"></div>
+            </div>
+        </section>
+        
+        <!-- Functionality Testing -->
+        <section class="test-section">
+            <h2>6. Core Functionality Testing</h2>
+            <p>Verify that all website features work across browsers:</p>
+            
+            <div class="feature-test">
+                <h3>Navigation</h3>
+                <ul class="checklist">
+                    <li><input type="checkbox" id="nav-menu"> Navigation menu displays correctly</li>
+                    <li><input type="checkbox" id="nav-mobile"> Mobile menu toggle works</li>
+                    <li><input type="checkbox" id="nav-scroll"> Smooth scrolling to sections</li>
+                    <li><input type="checkbox" id="nav-highlight"> Active section highlighting</li>
+                </ul>
+            </div>
+            
+            <div class="feature-test">
+                <h3>Social Media Integration</h3>
+                <ul class="checklist">
+                    <li><input type="checkbox" id="social-linkedin"> LinkedIn link opens correctly</li>
+                    <li><input type="checkbox" id="social-whatsapp"> WhatsApp link opens correctly</li>
+                    <li><input type="checkbox" id="social-icons"> Social icons display properly</li>
+                    <li><input type="checkbox" id="social-hover"> Hover effects work</li>
+                </ul>
+            </div>
+            
+            <div class="feature-test">
+                <h3>Visual Design</h3>
+                <ul class="checklist">
+                    <li><input type="checkbox" id="design-fonts"> Custom fonts load properly</li>
+                    <li><input type="checkbox" id="design-layout"> Layout maintains integrity</li>
+                    <li><input type="checkbox" id="design-animations"> Animations are smooth</li>
+                    <li><input type="checkbox" id="design-colors"> Colors display correctly</li>
+                </ul>
+            </div>
+        </section>
+        
+        <!-- Known Browser Issues -->
+        <section class="test-section">
+            <h2>7. Known Browser Issues & Workarounds</h2>
+            
+            <div class="test-result warning">
+                <h3>Internet Explorer 11 (Legacy Support)</h3>
+                <p><strong>Status:</strong> Not supported (discontinued by Microsoft)</p>
+                <p><strong>Fallbacks:</strong> Graceful degradation with basic CSS</p>
+            </div>
+            
+            <div class="test-result info">
+                <h3>Safari-Specific Issues</h3>
+                <ul>
+                    <li>CSS Grid: Check for proper gap support (Safari 12+)</li>
+                    <li>Flexbox: Verify gap property fallbacks (Safari 14.1+)</li>
+                    <li>Smooth scrolling: Test scroll-behavior CSS property</li>
+                    <li>Font rendering: Verify -webkit-font-smoothing</li>
+                </ul>
+            </div>
+            
+            <div class="test-result info">
+                <h3>Mobile Browser Considerations</h3>
+                <ul>
+                    <li>iOS Safari: 100vh viewport issues with address bar</li>
+                    <li>Android Chrome: Touch event handling</li>
+                    <li>Mobile Firefox: Font size adjustments</li>
+                    <li>Samsung Internet: CSS custom properties support</li>
+                </ul>
+            </div>
+        </section>
+        
+        <!-- Testing Tools & Resources -->
+        <section class="test-section">
+            <h2>8. Testing Tools & Resources</h2>
+            
+            <div class="test-result">
+                <h3>Online Testing Services</h3>
+                <ul>
+                    <li><a href="https://www.browserstack.com/" target="_blank">BrowserStack</a> - Live cross-browser testing</li>
+                    <li><a href="https://crossbrowsertesting.com/" target="_blank">CrossBrowserTesting</a> - Automated testing</li>
+                    <li><a href="https://www.lambdatest.com/" target="_blank">LambdaTest</a> - Cloud-based testing</li>
+                    <li><a href="https://caniuse.com/" target="_blank">Can I Use</a> - Feature support reference</li>
+                </ul>
+            </div>
+            
+            <div class="test-result">
+                <h3>Browser Developer Tools</h3>
+                <ul>
+                    <li>Chrome DevTools: F12 or Ctrl+Shift+I</li>
+                    <li>Firefox Developer Tools: F12 or Ctrl+Shift+I</li>
+                    <li>Safari Web Inspector: Cmd+Opt+I (enable in Preferences)</li>
+                    <li>Edge DevTools: F12 or Ctrl+Shift+I</li>
+                </ul>
+            </div>
+            
+            <div class="test-result">
+                <h3>Automated Testing Commands</h3>
+                <pre><code># Lighthouse CLI for multiple browsers
+lighthouse ../index.html --chrome-flags="--headless" --output=html
+
+# Puppeteer for Chrome testing
+node test-chrome.js
+
+# Playwright for multi-browser testing
+npx playwright test</code></pre>
+            </div>
+        </section>
+        
+        <!-- Test Results Summary -->
+        <section class="test-section">
+            <h2>9. Test Results Summary</h2>
+            <div id="test-summary">
+                <button class="test-button" onclick="generateBrowserSummary()">Generate Browser Test Summary</button>
+                <div id="browser-summary-results"></div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Last updated: <span id="last-updated"></span></p>
+        <p><a href="../index.html">← Back to Website</a> | <a href="accessibility.html">Accessibility Tests</a></p>
+    </footer>
+    
+    <script>
+        // Set last updated date
+        document.getElementById('last-updated').textContent = new Date().toLocaleDateString();
+        
+        // Browser detection
+        function detectBrowser() {
+            const browserInfo = document.getElementById('browser-info');
+            const userAgent = navigator.userAgent;
+            const platform = navigator.platform;
+            const language = navigator.language;
+            const cookieEnabled = navigator.cookieEnabled;
+            const onLine = navigator.onLine;
+            
+            let browserName = 'Unknown';
+            let browserVersion = 'Unknown';
+            
+            // Detect browser
+            if (userAgent.includes('Chrome') && !userAgent.includes('Edg')) {
+                browserName = 'Chrome';
+                browserVersion = userAgent.match(/Chrome\/(\d+)/)?.[1] || 'Unknown';
+            } else if (userAgent.includes('Firefox')) {
+                browserName = 'Firefox';
+                browserVersion = userAgent.match(/Firefox\/(\d+)/)?.[1] || 'Unknown';
+            } else if (userAgent.includes('Safari') && !userAgent.includes('Chrome')) {
+                browserName = 'Safari';
+                browserVersion = userAgent.match(/Version\/(\d+)/)?.[1] || 'Unknown';
+            } else if (userAgent.includes('Edg')) {
+                browserName = 'Edge';
+                browserVersion = userAgent.match(/Edg\/(\d+)/)?.[1] || 'Unknown';
+            }
+            
+            browserInfo.innerHTML = `
+                <h3>Current Browser Information</h3>
+                <p><strong>Browser:</strong> ${browserName} ${browserVersion}</p>
+                <p><strong>Platform:</strong> ${platform}</p>
+                <p><strong>Language:</strong> ${language}</p>
+                <p><strong>Viewport:</strong> ${window.innerWidth} × ${window.innerHeight}</p>
+                <p><strong>Screen Resolution:</strong> ${screen.width} × ${screen.height}</p>
+                <p><strong>Color Depth:</strong> ${screen.colorDepth} bits</p>
+                <p><strong>Cookies Enabled:</strong> ${cookieEnabled ? 'Yes' : 'No'}</p>
+                <p><strong>Online:</strong> ${onLine ? 'Yes' : 'No'}</p>
+                <p><strong>User Agent:</strong> <code>${userAgent}</code></p>
+            `;
+        }
+        
+        // Test CSS Features
+        function testCSSFeatures() {
+            const results = document.getElementById('css-features-results');
+            const features = [
+                { name: 'CSS Grid', test: () => CSS.supports('display', 'grid') },
+                { name: 'CSS Flexbox', test: () => CSS.supports('display', 'flex') },
+                { name: 'CSS Custom Properties', test: () => CSS.supports('--custom', '0') },
+                { name: 'CSS Gap', test: () => CSS.supports('gap', '1rem') },
+                { name: 'CSS Transforms', test: () => CSS.supports('transform', 'translateX(0)') },
+                { name: 'CSS Transitions', test: () => CSS.supports('transition', 'all 0.3s ease') },
+                { name: 'CSS Viewport Units', test: () => CSS.supports('height', '100vh') },
+                { name: 'CSS Object Fit', test: () => CSS.supports('object-fit', 'cover') }
+            ];
+            
+            let output = '<h4>CSS Feature Support:</h4><ul>';
+            features.forEach(feature => {
+                const supported = feature.test();
+                output += `<li class="${supported ? 'pass' : 'fail'}">${feature.name}: ${supported ? '✓ Supported' : '✗ Not Supported'}</li>`;
+            });
+            output += '</ul>';
+            
+            results.innerHTML = output;
+        }
+        
+        // Test JavaScript Features
+        function testJSFeatures() {
+            const results = document.getElementById('js-features-results');
+            const features = [
+                { name: 'ES6 Arrow Functions', test: () => { try { new Function('() => {}'); return true; } catch (e) { return false; } } },
+                { name: 'ES6 Template Literals', test: () => { try { new Function('`${1}`'); return true; } catch (e) { return false; } } },
+                { name: 'ES6 Classes', test: () => { try { new Function('class Test {}'); return true; } catch (e) { return false; } } },
+                { name: 'ES6 const/let', test: () => { try { new Function('const x = 1; let y = 2;'); return true; } catch (e) { return false; } } },
+                { name: 'Promise', test: () => typeof Promise !== 'undefined' },
+                { name: 'Fetch API', test: () => typeof fetch !== 'undefined' },
+                { name: 'IntersectionObserver', test: () => typeof IntersectionObserver !== 'undefined' },
+                { name: 'CustomEvent', test: () => typeof CustomEvent !== 'undefined' }
+            ];
+            
+            let output = '<h4>JavaScript Feature Support:</h4><ul>';
+            features.forEach(feature => {
+                const supported = feature.test();
+                output += `<li class="${supported ? 'pass' : 'fail'}">${feature.name}: ${supported ? '✓ Supported' : '✗ Not Supported'}</li>`;
+            });
+            output += '</ul>';
+            
+            results.innerHTML = output;
+        }
+        
+        // Test API Features
+        function testAPIFeatures() {
+            const results = document.getElementById('api-features-results');
+            const features = [
+                { name: 'Local Storage', test: () => typeof localStorage !== 'undefined' },
+                { name: 'Session Storage', test: () => typeof sessionStorage !== 'undefined' },
+                { name: 'Web Share API', test: () => typeof navigator.share !== 'undefined' },
+                { name: 'Geolocation API', test: () => typeof navigator.geolocation !== 'undefined' },
+                { name: 'Service Worker', test: () => 'serviceWorker' in navigator },
+                { name: 'Web Workers', test: () => typeof Worker !== 'undefined' },
+                { name: 'WebRTC', test: () => typeof RTCPeerConnection !== 'undefined' },
+                { name: 'WebGL', test: () => { const canvas = document.createElement('canvas'); return !!(canvas.getContext('webgl') || canvas.getContext('experimental-webgl')); } }
+            ];
+            
+            let output = '<h4>API Support:</h4><ul>';
+            features.forEach(feature => {
+                const supported = feature.test();
+                output += `<li class="${supported ? 'pass' : 'fail'}">${feature.name}: ${supported ? '✓ Supported' : '✗ Not Supported'}</li>`;
+            });
+            output += '</ul>';
+            
+            results.innerHTML = output;
+        }
+        
+        // Measure performance
+        function measurePerformance() {
+            const results = document.getElementById('performance-results');
+            
+            if ('performance' in window) {
+                const navigation = performance.getEntriesByType('navigation')[0];
+                const loadTime = Math.round(navigation.loadEventEnd - navigation.navigationStart);
+                const domContentLoaded = Math.round(navigation.domContentLoadedEventEnd - navigation.navigationStart);
+                
+                results.innerHTML = `
+                    <div class="test-result ${loadTime < 3000 ? 'pass' : 'warning'}">
+                        <h4>Performance Metrics</h4>
+                        <p><strong>Page Load Time:</strong> ${loadTime}ms ${loadTime < 3000 ? '(✓ Good)' : '(⚠ Needs Improvement)'}</p>
+                        <p><strong>DOM Content Loaded:</strong> ${domContentLoaded}ms</p>
+                        <p><strong>Memory Usage:</strong> ${performance.memory ? Math.round(performance.memory.usedJSHeapSize / 1024 / 1024) + 'MB' : 'Not available'}</p>
+                        <p><strong>Connection:</strong> ${navigator.connection ? navigator.connection.effectiveType : 'Unknown'}</p>
+                    </div>
+                `;
+            } else {
+                results.innerHTML = '<div class="test-result warning">Performance API not supported in this browser.</div>';
+            }
+        }
+        
+        // Generate browser test summary
+        function generateBrowserSummary() {
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            const total = checkboxes.length;
+            const completed = Array.from(checkboxes).filter(cb => cb.checked).length;
+            const percentage = Math.round((completed / total) * 100);
+            
+            const summaryResults = document.getElementById('browser-summary-results');
+            summaryResults.innerHTML = `
+                <div class="test-result ${percentage >= 90 ? 'pass' : percentage >= 70 ? 'warning' : 'fail'}">
+                    <h3>Browser Compatibility Test Summary</h3>
+                    <p><strong>Completed:</strong> ${completed} / ${total} tests (${percentage}%)</p>
+                    <p><strong>Browser Compatibility:</strong> 
+                        ${percentage >= 90 ? 'Excellent - Ready for all target browsers' : 
+                          percentage >= 70 ? 'Good - Minor browser-specific issues may exist' : 
+                          'Needs improvement - Address browser compatibility issues'}
+                    </p>
+                    <p><strong>Generated:</strong> ${new Date().toLocaleString()}</p>
+                    <p><strong>Test Environment:</strong> ${navigator.userAgent.includes('Chrome') ? 'Chrome' : 
+                                                              navigator.userAgent.includes('Firefox') ? 'Firefox' : 
+                                                              navigator.userAgent.includes('Safari') ? 'Safari' : 
+                                                              navigator.userAgent.includes('Edg') ? 'Edge' : 'Other'}</p>
+                </div>
+            `;
+        }
+        
+        // Auto-save checkbox states to localStorage
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach(checkbox => {
+            // Load saved state
+            const saved = localStorage.getItem('browser-test-' + checkbox.id);
+            if (saved === 'true') {
+                checkbox.checked = true;
+            }
+            
+            // Save state on change
+            checkbox.addEventListener('change', function() {
+                localStorage.setItem('browser-test-' + checkbox.id, checkbox.checked);
+            });
+        });
+        
+        // Initialize browser detection on load
+        detectBrowser();
+        
+        console.log('Browser compatibility testing page loaded');
+    </script>
+</body>
+</html>

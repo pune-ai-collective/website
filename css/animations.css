@@ -1,0 +1,419 @@
+/* Pune AI Collective - Animations Stylesheet
+   Subtle animations and transitions inspired by Zara's minimalist approach
+   Performance-first: using transform and opacity only for smooth animations
+*/
+
+/* Animation variables */
+:root {
+    /* Timing functions */
+    --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+    --ease-in-out-quart: cubic-bezier(0.76, 0, 0.24, 1);
+    --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+    
+    /* Animation durations */
+    --duration-fast: 0.15s;
+    --duration-normal: 0.3s;
+    --duration-slow: 0.5s;
+    
+    /* Animation delays for staggered effects */
+    --delay-1: 0.1s;
+    --delay-2: 0.2s;
+    --delay-3: 0.3s;
+}
+
+/* Base animation setup - smooth transitions for interactive elements */
+a,
+button,
+.social-icon,
+.nav-link,
+.cta-button,
+.contact-link {
+    transition: all var(--duration-normal) var(--ease-out-quart);
+}
+
+/* Page load animations */
+.hero-section {
+    animation: fadeInUp var(--duration-slow) var(--ease-out-expo) forwards;
+}
+
+.hero-title {
+    animation: fadeInUp var(--duration-slow) var(--ease-out-expo) var(--delay-1) both;
+}
+
+.hero-subtitle {
+    animation: fadeInUp var(--duration-slow) var(--ease-out-expo) var(--delay-2) both;
+}
+
+.hero-cta {
+    animation: fadeInUp var(--duration-slow) var(--ease-out-expo) var(--delay-3) both;
+}
+
+/* Navigation animations */
+.navbar {
+    animation: slideInDown var(--duration-normal) var(--ease-out-quart);
+}
+
+.nav-link {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Subtle underline effect for navigation links */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--primary-color);
+    transition: width var(--duration-normal) var(--ease-out-quart);
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+/* Mobile menu animations */
+.mobile-menu-toggle {
+    transition: transform var(--duration-fast) var(--ease-out-quart);
+}
+
+.mobile-menu-toggle:hover {
+    transform: scale(1.05);
+}
+
+.hamburger-line {
+    transform-origin: center;
+    transition: all var(--duration-normal) var(--ease-in-out-quart);
+}
+
+/* Mobile menu slide animation is in responsive.css */
+.nav-menu {
+    transition: transform var(--duration-normal) var(--ease-in-out-quart);
+}
+
+/* Social icon animations */
+.social-icon {
+    transform: translateZ(0); /* Force hardware acceleration */
+    transition: all var(--duration-normal) var(--ease-out-quart);
+}
+
+.social-icon:hover,
+.social-icon:focus {
+    transform: translateY(-2px) scale(1.1);
+}
+
+/* Subtle pulse effect for social icons */
+@keyframes subtlePulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
+}
+
+.social-icon:hover i,
+.social-icon:focus i {
+    animation: subtlePulse 2s ease-in-out infinite;
+}
+
+/* CTA Button animations */
+.cta-button {
+    transform: translateZ(0);
+    transition: all var(--duration-normal) var(--ease-out-quart);
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, 
+        transparent, 
+        rgba(255, 255, 255, 0.2), 
+        transparent
+    );
+    transition: left var(--duration-slow) var(--ease-out-quart);
+}
+
+.cta-button:hover::before {
+    left: 100%;
+}
+
+.cta-button:hover,
+.cta-button:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.cta-button:active {
+    transform: translateY(0);
+    transition-duration: var(--duration-fast);
+}
+
+/* Contact link animations */
+.contact-link {
+    transform: translateZ(0);
+    transition: all var(--duration-normal) var(--ease-out-quart);
+}
+
+.contact-link:hover,
+.contact-link:focus {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.contact-link:active {
+    transform: translateY(-1px);
+    transition-duration: var(--duration-fast);
+}
+
+/* Icon bounce animation for contact links */
+.contact-link:hover i,
+.contact-link:focus i {
+    animation: iconBounce var(--duration-normal) var(--ease-out-quart);
+}
+
+@keyframes iconBounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2px);
+    }
+}
+
+/* Section reveal animations */
+.content-section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all var(--duration-slow) var(--ease-out-expo);
+}
+
+.content-section.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Staggered animation for section elements */
+.section-title {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all var(--duration-slow) var(--ease-out-expo);
+}
+
+.section-content {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all var(--duration-slow) var(--ease-out-expo) var(--delay-1);
+}
+
+.content-section.in-view .section-title,
+.content-section.in-view .section-content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Footer animation */
+.site-footer {
+    animation: fadeIn var(--duration-slow) var(--ease-out-expo);
+}
+
+.footer-link {
+    transition: all var(--duration-normal) var(--ease-out-quart);
+    position: relative;
+}
+
+.footer-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: currentColor;
+    transition: width var(--duration-normal) var(--ease-out-quart);
+}
+
+.footer-link:hover::after,
+.footer-link:focus::after {
+    width: 100%;
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Loading animation for async content */
+@keyframes shimmer {
+    0% {
+        background-position: -200px 0;
+    }
+    100% {
+        background-position: 200px 0;
+    }
+}
+
+.loading-shimmer {
+    background: linear-gradient(90deg, 
+        var(--accent-color) 25%, 
+        #f0f0f0 50%, 
+        var(--accent-color) 75%
+    );
+    background-size: 200px 100%;
+    animation: shimmer 1.5s infinite;
+}
+
+/* Focus animations */
+*:focus {
+    animation: focusPulse 0.3s var(--ease-out-quart);
+}
+
+@keyframes focusPulse {
+    0% {
+        outline-offset: 2px;
+    }
+    50% {
+        outline-offset: 4px;
+    }
+    100% {
+        outline-offset: 2px;
+    }
+}
+
+/* Scroll-triggered animations */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all var(--duration-slow) var(--ease-out-expo);
+}
+
+.scroll-reveal.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Performance optimizations */
+.gpu-accelerated {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+/* Reduced motion media query overrides */
+@media (prefers-reduced-motion: reduce) {
+    /* Disable animations for users who prefer reduced motion */
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    
+    /* Remove transform animations but keep opacity changes */
+    .hero-section,
+    .hero-title,
+    .hero-subtitle,
+    .hero-cta,
+    .content-section,
+    .section-title,
+    .section-content {
+        transform: none !important;
+        animation: none !important;
+    }
+    
+    /* Keep essential focus indicators */
+    *:focus {
+        animation: none;
+        outline: 2px solid var(--primary-color);
+        outline-offset: 2px;
+    }
+    
+    /* Remove hover transforms but keep color changes */
+    .social-icon:hover,
+    .social-icon:focus,
+    .cta-button:hover,
+    .cta-button:focus,
+    .contact-link:hover,
+    .contact-link:focus {
+        transform: none !important;
+    }
+}
+
+/* High contrast mode adjustments */
+@media (prefers-contrast: high) {
+    /* Enhance animations for better visibility in high contrast mode */
+    .nav-link::after {
+        height: 2px;
+    }
+    
+    .footer-link::after {
+        height: 2px;
+    }
+    
+    /* More prominent focus indicators */
+    *:focus {
+        outline-width: 3px;
+        outline-offset: 3px;
+    }
+}
+
+/* Print mode - disable all animations */
+@media print {
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+        transform: none !important;
+    }
+}
