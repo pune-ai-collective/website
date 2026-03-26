@@ -291,6 +291,17 @@ button,
     }
 }
 
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 /* Loading animation for async content */
 @keyframes shimmer {
     0% {

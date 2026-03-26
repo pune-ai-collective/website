@@ -332,6 +332,124 @@ main {
     min-height: calc(100vh - 200px);
 }
 
+/* Meetup Banner */
+.meetup-banner {
+    background: linear-gradient(135deg, #000000 0%, #333333 100%);
+    color: var(--background-color);
+    padding: var(--spacing-xl) var(--spacing-xl);
+    border-bottom: 3px solid var(--primary-color);
+    animation: slideDown 0.5s ease-out;
+}
+
+.meetup-banner-container {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+}
+
+.meetup-banner-content {
+    text-align: center;
+}
+
+.meetup-banner-title {
+    font-size: var(--font-size-xxl);
+    font-weight: var(--font-weight-light);
+    color: var(--background-color);
+    margin-bottom: var(--spacing-sm);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.meetup-banner-date {
+    font-size: var(--font-size-large);
+    color: var(--background-color);
+    margin-bottom: var(--spacing-md);
+    font-weight: var(--font-weight-medium);
+    opacity: 0.9;
+}
+
+.meetup-banner-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-lg);
+}
+
+.meetup-detail-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    color: var(--background-color);
+    font-size: var(--font-size-base);
+    opacity: 0.95;
+}
+
+.meetup-detail-item i {
+    font-size: var(--font-size-base);
+    min-width: 20px;
+    text-align: center;
+}
+
+.meetup-countdown {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+    flex-wrap: wrap;
+}
+
+.countdown-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: var(--spacing-md) var(--spacing-lg);
+    border-radius: var(--border-radius);
+    min-width: 80px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all var(--transition-speed) var(--transition-timing);
+}
+
+.countdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+}
+
+.countdown-number {
+    font-size: var(--font-size-xxl);
+    font-weight: var(--font-weight-semibold);
+    color: var(--background-color);
+    line-height: 1;
+    margin-bottom: var(--spacing-xs);
+}
+
+.countdown-label {
+    font-size: var(--font-size-small);
+    color: var(--background-color);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    opacity: 0.8;
+}
+
+.meetup-banner-cta {
+    margin-top: var(--spacing-md);
+}
+
+.meetup-banner .cta-button {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    border-color: var(--background-color);
+    font-weight: var(--font-weight-semibold);
+}
+
+.meetup-banner .cta-button:hover,
+.meetup-banner .cta-button:focus {
+    background-color: transparent;
+    color: var(--background-color);
+    border-color: var(--background-color);
+}
+
 /* Hero section */
 .hero-section {
     padding: var(--spacing-huge) var(--spacing-xl);
@@ -486,8 +604,78 @@ main {
     letter-spacing: 0.05em;
 }
 
+.stat-item-upcoming {
+    background: linear-gradient(135deg, #000000 0%, #333333 100%);
+}
+
+.stat-item-upcoming .stat-number,
+.stat-item-upcoming .stat-label {
+    color: var(--background-color);
+}
+
+.meetup-upcoming {
+    margin: var(--spacing-xl) 0;
+    padding: var(--spacing-lg);
+    background-color: var(--accent-color);
+    border-radius: var(--border-radius);
+    text-align: center;
+}
+
+.upcoming-meetup-title {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-medium);
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.upcoming-meetup-date {
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weight-semibold);
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-md);
+}
+
+.upcoming-meetup-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+}
+
+.upcoming-info-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    color: var(--secondary-color);
+    font-size: var(--font-size-base);
+}
+
+.upcoming-info-item i {
+    font-size: var(--font-size-base);
+    min-width: 18px;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.upcoming-meetup-description {
+    font-size: var(--font-size-base);
+    color: var(--secondary-color);
+    line-height: 1.7;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
 .meetup-cta {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.meetup-cta .cta-button {
+    min-width: 200px;
 }
 
 /* Contact section */

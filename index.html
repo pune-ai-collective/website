@@ -7,7 +7,11 @@
     <meta name="description" content="Pune AI Collective - Where AI minds meet, innovate, and grow. Join our community for knowledge sharing, collaborative projects, and skill development in artificial intelligence.">
     <meta name="keywords" content="AI, Artificial Intelligence, Pune, Community, Innovation, Technology, Machine Learning">
     <meta name="author" content="Pune AI Collective">
-    
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
     <!-- Open Graph meta tags for social media sharing -->
     <meta property="og:title" content="Pune AI Collective - AI Innovation Community">
     <meta property="og:description" content="Where AI minds meet, innovate, and grow. Join Pune's AI community for knowledge sharing, collaborative projects, and skill development.">
@@ -119,7 +123,55 @@
             </div>
         </div>
     </nav>
-    
+
+    <!-- Upcoming Meetup Banner -->
+    <section class="meetup-banner" role="banner" aria-labelledby="meetup-banner-heading">
+        <div class="meetup-banner-container">
+            <div class="meetup-banner-content">
+                <h2 id="meetup-banner-heading" class="meetup-banner-title">Upcoming Meetup</h2>
+                <p class="meetup-banner-date">April 11, 2026</p>
+                <div class="meetup-banner-details">
+                    <div class="meetup-detail-item">
+                        <i class="fas fa-clock" aria-hidden="true"></i>
+                        <span>10 AM - 1 PM</span>
+                    </div>
+                    <div class="meetup-detail-item">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <span>DPGU School of Management & Research, Tathawade, Pune</span>
+                    </div>
+                </div>
+                <div class="meetup-countdown" id="meetup-countdown" aria-live="polite">
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="days">0</span>
+                        <span class="countdown-label">Days</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="hours">0</span>
+                        <span class="countdown-label">Hours</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="minutes">0</span>
+                        <span class="countdown-label">Minutes</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="seconds">0</span>
+                        <span class="countdown-label">Seconds</span>
+                    </div>
+                </div>
+                <div class="meetup-banner-cta">
+                    <a
+                      href="https://luma.com/event/evt-CdvJm2GXUiSuANw"
+                      class="luma-checkout--button cta-button primary"
+                      data-luma-action="checkout"
+                      data-luma-event-id="evt-CdvJm2GXUiSuANw"
+                    >
+                      Register for Event
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Main content -->
     <main id="main-content" role="main">
         <!-- Hero section -->
@@ -183,18 +235,41 @@
                                 <span class="stat-number">1</span>
                                 <span class="stat-label">Meetup Completed</span>
                             </div>
-                            <div class="stat-item">
-                                <span class="stat-number">More</span>
-                                <span class="stat-label">Coming Soon</span>
+                            <div class="stat-item stat-item-upcoming">
+                                <span class="stat-number">Apr 11</span>
+                                <span class="stat-label">Next Meetup</span>
                             </div>
                         </div>
+                        <div class="meetup-upcoming">
+                            <h3 class="upcoming-meetup-title">Upcoming Meetup</h3>
+                            <p class="upcoming-meetup-date">April 11, 2026</p>
+                            <div class="upcoming-meetup-info">
+                                <div class="upcoming-info-item">
+                                    <i class="fas fa-clock" aria-hidden="true"></i>
+                                    <span>10 AM - 1 PM</span>
+                                </div>
+                                <div class="upcoming-info-item">
+                                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                                    <span>DPGU School of Management & Research, Tathawade, Pune</span>
+                                </div>
+                            </div>
+                            <p class="upcoming-meetup-description">
+                                Join us for our next meetup! Connect with fellow AI enthusiasts, share insights, and explore the latest developments in artificial intelligence.
+                            </p>
+                        </div>
                         <div class="meetup-cta">
-                            <a href="https://github.com/pune-ai-collective" 
-                               target="_blank" 
+                            <a href="https://luma.com/event/evt-CdvJm2GXUiSuANw"
+                               class="luma-checkout--button cta-button primary"
+                               data-luma-action="checkout"
+                               data-luma-event-id="evt-CdvJm2GXUiSuANw">
+                                Register for Upcoming Meetup
+                            </a>
+                            <a href="https://github.com/pune-ai-collective"
+                               target="_blank"
                                rel="noopener noreferrer"
-                               class="cta-button secondary" 
+                               class="cta-button secondary"
                                aria-label="View our meetup materials on GitHub (opens in new tab)">
-                                View Meetup Materials
+                                View Past Meetup Materials
                             </a>
                         </div>
                     </div>
@@ -265,5 +340,9 @@
     <script src="js/main.js"></script>
     <script src="js/navigation.js"></script>
     <script src="js/social-integration.js"></script>
+    <script src="js/countdown.js"></script>
+
+    <!-- Luma checkout button script -->
+    <script id="luma-checkout" src="https://embed.lu.ma/checkout-button.js"></script>
 </body>
 </html>
