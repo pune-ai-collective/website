@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration - Pune AI Collective</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #f5f7fa;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+            max-width: 600px;
+            width: 100%;
+            padding: 50px 40px;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .subtitle {
+            font-size: 1.1em;
+            color: #666;
+            margin-bottom: 35px;
+        }
+
+        .info-box {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 25px 0;
+            text-align: left;
+            border: 1px solid #e9ecef;
+        }
+
+        .info-box h2 {
+            font-size: 1.2em;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .info-item {
+            margin: 12px 0;
+            color: #555;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+
+        .info-item strong {
+            color: #2c3e50;
+            font-weight: 500;
+        }
+
+        .notice {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 25px 0;
+            color: #856404;
+        }
+
+        .notice p {
+            margin: 8px 0;
+            line-height: 1.6;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 15px 35px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1em;
+            margin: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: #5568d3;
+            transform: translateY(-1px);
+        }
+
+        .secondary-button {
+            background: #6c757d;
+        }
+
+        .secondary-button:hover {
+            background: #5a6268;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 40px 25px;
+            }
+
+            h1 {
+                font-size: 1.6em;
+            }
+
+            .cta-button {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">Pune AI Collective</div>
+        <h1>Important Notice About Registration</h1>
+        <p class="subtitle">April 11, 2026 Meetup</p>
+
+        <div class="notice">
+            <p><strong>Happy April Fools' Day!</strong></p>
+            <p>We appreciate your enthusiasm, but there's no free swag box this time. However, we have something much more valuable to offer.</p>
+        </div>
+
+        <div class="info-box">
+            <h2>Why You Should Still Register</h2>
+            <div class="info-item">
+                <strong>Knowledge & Skills:</strong> Learn from industry experts and hands-on workshops that will advance your AI capabilities.
+            </div>
+            <div class="info-item">
+                <strong>Networking:</strong> Connect with like-minded professionals, researchers, and enthusiasts in Pune's AI community.
+            </div>
+            <div class="info-item">
+                <strong>Career Growth:</strong> Discover opportunities, collaborations, and insights that can shape your professional journey.
+            </div>
+            <div class="info-item">
+                <strong>Community Access:</strong> Join our WhatsApp and LinkedIn groups for ongoing discussions, resources, and support.
+            </div>
+        </div>
+
+        <div class="info-box">
+            <h2>Register on Luma</h2>
+            <div class="info-item">
+                Using Luma for registration helps you stay organized with calendar integration, automatic reminders, and easy access to event updates. It's a simple, professional way to manage your event attendance and get the most out of your learning experience.
+            </div>
+        </div>
+
+        <a href="https://luma.com/event/evt-CdvJm2GXUiSuANw"
+           class="luma-checkout--button cta-button"
+           data-luma-action="checkout"
+           data-luma-event-id="evt-CdvJm2GXUiSuANw">
+            Complete Registration on Luma
+        </a>
+
+        <a href="index.html" class="cta-button secondary-button">
+            Back to Home
+        </a>
+    </div>
+
+    <!-- Luma checkout button script -->
+    <script id="luma-checkout" src="https://embed.lu.ma/checkout-button.js"></script>
+</body>
+</html>
