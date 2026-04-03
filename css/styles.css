@@ -12,18 +12,18 @@
     --accent-color: #f8f8f8;
     --border-color: #e5e5e5;
     --text-light: #999999;
-    
+
     /* Social media brand colors */
     --linkedin-color: #0077b5;
     --whatsapp-color: #25d366;
-    
+
     /* Typography - Helvetica-inspired modern font stack */
     --font-primary: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     --font-weight-light: 300;
     --font-weight-normal: 400;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
-    
+
     /* Font sizes with modular scale */
     --font-size-small: 0.875rem;     /* 14px */
     --font-size-base: 1rem;          /* 16px */
@@ -32,7 +32,7 @@
     --font-size-xxl: 1.5rem;         /* 24px */
     --font-size-hero: 2.5rem;        /* 40px */
     --font-size-title: 2rem;         /* 32px */
-    
+
     /* Spacing with consistent rhythm */
     --spacing-xs: 0.25rem;    /* 4px */
     --spacing-sm: 0.5rem;     /* 8px */
@@ -41,17 +41,61 @@
     --spacing-xl: 2rem;       /* 32px */
     --spacing-xxl: 3rem;      /* 48px */
     --spacing-huge: 4rem;     /* 64px */
-    
+
     /* Layout and containers */
     --container-max-width: 1200px;
     --content-max-width: 800px;
     --border-radius: 0.25rem;
     --transition-speed: 0.3s;
     --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
-    
+
     /* Z-index scale */
     --z-navigation: 100;
     --z-modal: 1000;
+}
+
+/* Dark mode color overrides */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary-color: #ffffff;
+        --secondary-color: #b3b3b3;
+        --background-color: #0f0f0f;
+        --accent-color: #1a1a1a;
+        --border-color: #333333;
+        --text-light: #666666;
+    }
+
+    /* Adjust hover colors for better dark mode contrast */
+    .github-icon:hover,
+    .github-icon:focus,
+    .github-link:hover,
+    .github-link:focus {
+        color: #e6e6e6;
+    }
+
+    /* Ensure dropdown menus have proper dark mode styling */
+    .dropdown-menu {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Adjust box shadows for dark mode */
+    .stat-item {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .contact-link {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .contact-link:hover,
+    .contact-link:focus {
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+    }
+
+    .cta-button:hover,
+    .cta-button:focus {
+        box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+    }
 }
 
 /* CSS Reset and Foundation */
