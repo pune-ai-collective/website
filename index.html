@@ -22,7 +22,10 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Pune AI Collective - AI Innovation Community">
     <meta name="twitter:description" content="Where AI minds meet, innovate, and grow. Join Pune's AI community for knowledge sharing, collaborative projects, and skill development.">
-    
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.puneaicollective.org/">
+
     <!-- Preconnect to external resources for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,6 +43,98 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/animations.css">
+
+    <!-- JSON-LD Structured Data: Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Pune AI Collective",
+      "description": "Empowering Pune's AI community through knowledge sharing, collaborative projects, and skill development.",
+      "url": "https://www.puneaicollective.org",
+      "logo": "https://www.puneaicollective.org/favicon.ico",
+      "foundingDate": "2025",
+      "sameAs": [
+        "https://www.linkedin.com/groups/11802260/",
+        "https://github.com/pune-ai-collective"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Community Manager",
+        "url": "https://www.puneaicollective.org/#contact"
+      }
+    }
+    </script>
+
+    <!-- JSON-LD Structured Data: Event Series for Meetups -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EventSeries",
+      "name": "Pune AI Collective Meetups",
+      "description": "Regular meetups bringing together AI enthusiasts, researchers, and professionals in Pune for knowledge sharing and collaboration.",
+      "organizer": {
+        "@type": "Organization",
+        "name": "Pune AI Collective",
+        "url": "https://www.puneaicollective.org"
+      },
+      "location": {
+        "@type": "Place",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Pune",
+          "addressRegion": "Maharashtra",
+          "addressCountry": "IN"
+        }
+      },
+      "subEvent": [
+        {
+          "@type": "Event",
+          "name": "Monsoon Meetup - Introduction to LLMs",
+          "startDate": "2025-08-15",
+          "eventStatus": "https://schema.org/EventScheduled",
+          "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+          "description": "Introduction to Large Language Models (LLMs), prompt engineering techniques, and practical AI applications.",
+          "organizer": {
+            "@type": "Organization",
+            "name": "Pune AI Collective",
+            "url": "https://www.puneaicollective.org"
+          },
+          "location": {
+            "@type": "Place",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Pune",
+              "addressRegion": "Maharashtra",
+              "addressCountry": "IN"
+            }
+          }
+        },
+        {
+          "@type": "Event",
+          "name": "Kickoff Meetup - Community Formation",
+          "startDate": "2025-06-15",
+          "eventStatus": "https://schema.org/EventScheduled",
+          "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+          "description": "Community formation, vision setting, and introduction to AI fundamentals.",
+          "organizer": {
+            "@type": "Organization",
+            "name": "Pune AI Collective",
+            "url": "https://www.puneaicollective.org"
+          },
+          "location": {
+            "@type": "Place",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Pune",
+              "addressRegion": "Maharashtra",
+              "addressCountry": "IN"
+            }
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <!-- Skip to main content link for accessibility -->
@@ -137,7 +232,7 @@
                 </p>
                 <div class="hero-cta">
                     <a href="#mission" class="cta-button primary" aria-describedby="mission-description">
-                        Learn More
+                        Discover Our Mission
                     </a>
                 </div>
             </div>
@@ -147,7 +242,7 @@
         <section class="content-section mission-section" id="mission" aria-labelledby="mission-heading">
             <div class="section-container">
                 <header class="section-header">
-                    <h2 id="mission-heading" class="section-title">Our Mission</h2>
+                    <h2 id="mission-heading" class="section-title">Our Mission: Empowering Pune's AI Community</h2>
                 </header>
                 <div class="section-content">
                     <p class="mission-text" id="mission-description">
@@ -161,7 +256,7 @@
         <section class="content-section vision-section" id="vision" aria-labelledby="vision-heading">
             <div class="section-container">
                 <header class="section-header">
-                    <h2 id="vision-heading" class="section-title">Our Vision</h2>
+                    <h2 id="vision-heading" class="section-title">Our Vision: Pune as a Global AI Innovation Hub</h2>
                 </header>
                 <div class="section-content">
                     <p class="vision-text">
@@ -175,26 +270,58 @@
         <section class="content-section meetups-section" id="meetups" aria-labelledby="meetups-heading">
             <div class="section-container">
                 <header class="section-header">
-                    <h2 id="meetups-heading" class="section-title">Our Meetups</h2>
+                    <h2 id="meetups-heading" class="section-title">Our Meetups: Regular Knowledge-Sharing Events</h2>
                 </header>
                 <div class="section-content">
                     <p class="meetups-text">
                         We organize regular meetups to bring together AI enthusiasts, researchers, and professionals in Pune. Join us to learn, network, and collaborate on cutting-edge AI projects and innovations.
                     </p>
+
                     <div class="meetups-info">
-                        <div class="meetup-stats">
+                        <h3>Past Meetups</h3>
+                        <div class="meetup-list" style="margin: 2rem 0;">
+                            <article class="meetup-item" style="margin-bottom: 1.5rem;">
+                                <h4 style="color: #333; margin-bottom: 0.5rem;">
+                                    <strong>Monsoon Meetup</strong> - August 2025
+                                </h4>
+                                <p style="color: #666; margin-bottom: 0.5rem;">
+                                    Introduction to Large Language Models (LLMs), prompt engineering techniques, and practical AI applications.
+                                </p>
+                                <p>
+                                    <a href="assets/Monsoon-meetup-blog.pdf"
+                                       target="_blank"
+                                       rel="noopener noreferrer"
+                                       style="color: #4A90E2; text-decoration: none;">
+                                        Read Monsoon Meetup Summary (PDF)
+                                        <i class="fas fa-external-link-alt" aria-hidden="true" style="font-size: 0.8em; margin-left: 0.3rem;"></i>
+                                    </a>
+                                </p>
+                            </article>
+
+                            <article class="meetup-item" style="margin-bottom: 1.5rem;">
+                                <h4 style="color: #333; margin-bottom: 0.5rem;">
+                                    <strong>Kickoff Meetup</strong> - June 2025
+                                </h4>
+                                <p style="color: #666;">
+                                    Community formation, vision setting, and introduction to AI fundamentals. Established the foundation for collaborative learning and knowledge sharing.
+                                </p>
+                            </article>
+                        </div>
+
+                        <div class="meetup-stats" style="margin: 2rem 0;">
                             <div class="stat-item">
                                 <span class="stat-number">2</span>
                                 <span class="stat-label">Meetups Completed</span>
                             </div>
                         </div>
+
                         <div class="meetup-cta">
                             <a href="https://github.com/pune-ai-collective"
                                target="_blank"
                                rel="noopener noreferrer"
                                class="cta-button secondary"
                                aria-label="View our meetup materials on GitHub (opens in new tab)">
-                                View Past Meetup Materials
+                                View All Meetup Materials on GitHub
                             </a>
                         </div>
                     </div>

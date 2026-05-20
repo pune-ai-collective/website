@@ -1,0 +1,54 @@
+# Pune AI Collective
+
+Pune AI Collective is a community-driven organization empowering Pune's AI ecosystem through knowledge sharing, collaborative projects, and skill development.
+
+## About
+
+/ — Homepage with mission, vision, and community overview
+The Pune AI Collective brings together AI enthusiasts, researchers, and professionals in Pune to facilitate knowledge sharing and collaborative innovation in artificial intelligence.
+
+**Mission:** Empower Pune's AI community by facilitating knowledge sharing, collaborative projects, and skill development through accessible events and resources.
+
+**Vision:** Establish Pune as a globally recognized epicenter of AI innovation.
+
+## Community Pages
+
+/show-and-tell.html — Submit AI projects and innovations
+Community members can share their AI projects, experiments, research, and innovations with the broader Pune AI community through this submission portal.
+
+## Resources
+
+/assets/Monsoon-meetup-blog.pdf — Summary of the Monsoon Meetup (August 2025)
+Detailed blog post covering the first major meetup event featuring discussions on LLMs and AI applications.
+
+## Connect
+
+**LinkedIn Group:** https://www.linkedin.com/groups/11802260/
+Join the professional LinkedIn group for networking and community updates.
+
+**WhatsApp Community:** https://chat.whatsapp.com/JKVSE67goMv2baHH4RYkDl
+Real-time chat community for discussions, questions, and event coordination.
+
+**GitHub Organization:** https://github.com/pune-ai-collective
+Access to meetup materials, code samples, and community projects.
+
+## Events
+
+**Meetups:** Regular quarterly events bringing together AI enthusiasts for knowledge sharing, networking, and collaboration.
+- 2 meetups completed as of May 2026
+- Topics include: AI fundamentals, LLMs, prompt engineering, machine learning applications
+- Future meetups announced via LinkedIn and WhatsApp
+
+## Getting Involved
+
+1. Join the LinkedIn Group or WhatsApp Community
+2. Attend upcoming meetups (check homepage for dates)
+3. Submit your AI projects via Show and Tell
+4. Contribute to GitHub projects
+5. Network with Pune's AI community
+
+## Contact
+
+For inquiries, collaboration opportunities, or event sponsorship:
+- Visit the homepage Contact section
+- Connect via social channels (LinkedIn, WhatsApp, GitHub)
