@@ -145,7 +145,7 @@
         <div class="nav-container">
             <div class="nav-brand">
                 <a href="#home" class="nav-logo" aria-label="Pune AI Collective Home">
-                    Pune AI Collective
+                    <img src="logo.png" alt="Pune AI Collective" style="height: 40px; width: auto;">
                 </a>
             </div>
             
@@ -167,25 +167,14 @@
                 <li class="nav-item" role="none">
                     <a href="#vision" class="nav-link" role="menuitem">Vision</a>
                 </li>
-                <li class="nav-item has-dropdown" role="none">
-                    <a href="#meetups" class="nav-link" role="menuitem" aria-expanded="false" aria-haspopup="true">
-                        Meetups
-                        <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
-                    </a>
-                    <ul class="dropdown-menu" role="menu" aria-label="Meetups submenu">
-                        <li class="dropdown-item" role="none">
-                            <a href="#meetups" class="dropdown-link" role="menuitem">All Meetups</a>
-                        </li>
-                        <li class="dropdown-item" role="none">
-                            <a href="assets/Monsoon-meetup-blog.pdf" class="dropdown-link" role="menuitem" target="_blank" rel="noopener noreferrer">
-                                Monsoon Meetup Blog
-                                <i class="fas fa-external-link-alt" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                    </ul>
+                <li class="nav-item" role="none">
+                    <a href="#meetups" class="nav-link" role="menuitem">Meetups</a>
                 </li>
                 <li class="nav-item" role="none">
-                    <a href="show-and-tell.html" class="nav-link" role="menuitem">Show and Tell</a>
+                    <a href="college-outreach.html" class="nav-link" role="menuitem">College Outreach</a>
+                </li>
+                <li class="nav-item" role="none">
+                    <a href="ai-jobs.html" class="nav-link" role="menuitem">AI Jobs</a>
                 </li>
                 <li class="nav-item" role="none">
                     <a href="#contact" class="nav-link" role="menuitem">Contact</a>
@@ -280,37 +269,109 @@
                     <div class="meetups-info">
                         <h3>Past Meetups</h3>
                         <div class="meetup-list" style="margin: 2rem 0;">
-                            <article class="meetup-item" style="margin-bottom: 1.5rem;">
-                                <h4 style="color: #333; margin-bottom: 0.5rem;">
-                                    <strong>Monsoon Meetup</strong> - August 2025
-                                </h4>
-                                <p style="color: #666; margin-bottom: 0.5rem;">
-                                    Introduction to Large Language Models (LLMs), prompt engineering techniques, and practical AI applications.
-                                </p>
-                                <p>
+
+                            <!-- Event 1: Skills War -->
+                            <article class="meetup-item" style="margin-bottom: 2.5rem; padding-bottom: 2rem; border-bottom: 1px solid #e0e0e0;">
+                                <div style="margin-bottom: 1rem;">
+                                    <h4 style="color: #000; font-size: 1.3rem; font-weight: 600; margin-bottom: 0.3rem;">Skills War</h4>
+                                    <p style="color: #999; font-size: 0.9rem; margin-bottom: 0.8rem;">May 21st, 2026</p>
+                                    <p style="color: #555; line-height: 1.7;">
+                                        A competitive showcase where 100+ attendees witnessed individuals and teams demonstrate AI agent skills built from scratch. Audience voted for top 3 winners.
+                                    </p>
+                                </div>
+                                <div style="margin-top: 1.2rem;">
+                                    <p style="color: #333; font-weight: 600; margin-bottom: 0.6rem;">Notable Projects Demonstrated:</p>
+                                    <ul style="color: #555; line-height: 1.8; margin-left: 1.5rem;">
+                                        <li>Git workflow automation using plain English commands</li>
+                                        <li>Automated commit generation, pull requests, and code reviews</li>
+                                        <li>Figma-to-React component conversion tools</li>
+                                        <li>Web app agent-readiness assessment checker</li>
+                                        <li>Self-healing workstation systems</li>
+                                        <li>Automated security vulnerability triage</li>
+                                    </ul>
+                                </div>
+                            </article>
+
+                            <!-- Event 2: DPGU AI Meetup -->
+                            <article class="meetup-item" style="margin-bottom: 2.5rem; padding-bottom: 2rem; border-bottom: 1px solid #e0e0e0;">
+                                <div style="margin-bottom: 1rem;">
+                                    <h4 style="color: #000; font-size: 1.3rem; font-weight: 600; margin-bottom: 0.3rem;">DPGU AI Meetup: AI in Real-World Applications</h4>
+                                    <p style="color: #999; font-size: 0.9rem; margin-bottom: 0.8rem;">April 11th, 2026</p>
+                                    <p style="color: #555; line-height: 1.7;">
+                                        Bridging theory and practice at DPGU School of Management & Research. Industry practitioners demonstrated how AI moves from concept to production.
+                                    </p>
+                                </div>
+                                <div style="margin-top: 1.2rem;">
+                                    <p style="color: #333; font-weight: 600; margin-bottom: 0.6rem;">Key Topics:</p>
+                                    <ul style="color: #555; line-height: 1.8; margin-left: 1.5rem;">
+                                        <li>ML fundamentals and Generative AI applications</li>
+                                        <li>Production-ready systems and deployment strategies</li>
+                                        <li>Career pathways in AI/ML</li>
+                                        <li>Real-world problem-solving with AI</li>
+                                    </ul>
+                                    <p style="color: #666; margin-top: 1rem; font-size: 0.95rem;">
+                                        <strong style="color: #333;">Speakers:</strong> Nancy Jain, Nitish Singh, Abhishek Kumar, Deep Gandhi, Navinya Shende, Deepak Koul
+                                    </p>
+                                </div>
+                            </article>
+
+                            <!-- Event 3: Oxford-Style Debate -->
+                            <article class="meetup-item" style="margin-bottom: 2.5rem; padding-bottom: 2rem; border-bottom: 1px solid #e0e0e0;">
+                                <div style="margin-bottom: 1rem;">
+                                    <h4 style="color: #000; font-size: 1.3rem; font-weight: 600; margin-bottom: 0.3rem;">Oxford-Style Debate</h4>
+                                    <p style="color: #999; font-size: 0.9rem; margin-bottom: 0.8rem;">February 4th, 2026</p>
+                                    <p style="color: #555; line-height: 1.7; margin-bottom: 1rem;">
+                                        First Oxford-style debate tackling the motion: <em>"Should we ban GenAI use in production code reviews?"</em>
+                                    </p>
+                                </div>
+                                <div style="margin-top: 1.2rem;">
+                                    <p style="color: #333; font-weight: 600; margin-bottom: 0.6rem;">Teams:</p>
+                                    <div style="margin-left: 1rem; margin-bottom: 1rem;">
+                                        <p style="color: #555; line-height: 1.7; margin-bottom: 0.5rem;">
+                                            <strong style="color: #000;">Team "Ban"</strong> (Kapil Nema, Sushilkumar Deshmukh, Aniket Paluskar): Focused on trust and security risks from AI hallucinations.
+                                        </p>
+                                        <p style="color: #555; line-height: 1.7;">
+                                            <strong style="color: #000;">Team "Build"</strong> (Jigar Raisinghani, Rigin Oommen, Deep Gandhi): Argued AI supercharges development with proper human oversight.
+                                        </p>
+                                    </div>
+                                    <p style="color: #666; margin-top: 1rem; font-size: 0.95rem;">
+                                        <strong style="color: #333;">Verdict:</strong> Majority voted Against the Ban (Pre: 60 vs 31, Post: 35 vs 23)
+                                    </p>
+                                </div>
+                            </article>
+
+                            <!-- Event 4: Monsoon Meetup -->
+                            <article class="meetup-item" style="margin-bottom: 2.5rem; padding-bottom: 2rem; border-bottom: 1px solid #e0e0e0;">
+                                <div style="margin-bottom: 1rem;">
+                                    <h4 style="color: #000; font-size: 1.3rem; font-weight: 600; margin-bottom: 0.3rem;">Monsoon Meetup</h4>
+                                    <p style="color: #999; font-size: 0.9rem; margin-bottom: 0.8rem;">August 2025</p>
+                                    <p style="color: #555; line-height: 1.7; margin-bottom: 1rem;">
+                                        Introduction to Large Language Models (LLMs), prompt engineering techniques, and practical AI applications.
+                                    </p>
                                     <a href="assets/Monsoon-meetup-blog.pdf"
                                        target="_blank"
                                        rel="noopener noreferrer"
-                                       style="color: #4A90E2; text-decoration: none;">
-                                        Read Monsoon Meetup Summary (PDF)
-                                        <i class="fas fa-external-link-alt" aria-hidden="true" style="font-size: 0.8em; margin-left: 0.3rem;"></i>
+                                       style="color: #4A90E2; text-decoration: none; font-size: 0.95rem;">
+                                        Read Monsoon Meetup Summary (PDF) <i class="fas fa-external-link-alt" aria-hidden="true" style="font-size: 0.75em; margin-left: 0.3rem;"></i>
                                     </a>
-                                </p>
+                                </div>
                             </article>
 
-                            <article class="meetup-item" style="margin-bottom: 1.5rem;">
-                                <h4 style="color: #333; margin-bottom: 0.5rem;">
-                                    <strong>Kickoff Meetup</strong> - June 2025
-                                </h4>
-                                <p style="color: #666;">
-                                    Community formation, vision setting, and introduction to AI fundamentals. Established the foundation for collaborative learning and knowledge sharing.
-                                </p>
+                            <!-- Event 5: Kickoff Meetup -->
+                            <article class="meetup-item" style="margin-bottom: 2rem;">
+                                <div style="margin-bottom: 1rem;">
+                                    <h4 style="color: #000; font-size: 1.3rem; font-weight: 600; margin-bottom: 0.3rem;">Kickoff Meetup</h4>
+                                    <p style="color: #999; font-size: 0.9rem; margin-bottom: 0.8rem;">June 2025</p>
+                                    <p style="color: #555; line-height: 1.7;">
+                                        Community formation, vision setting, and introduction to AI fundamentals. Established the foundation for collaborative learning and knowledge sharing.
+                                    </p>
+                                </div>
                             </article>
                         </div>
 
                         <div class="meetup-stats" style="margin: 2rem 0;">
                             <div class="stat-item">
-                                <span class="stat-number">2</span>
+                                <span class="stat-number">5</span>
                                 <span class="stat-label">Meetups Completed</span>
                             </div>
                         </div>
@@ -381,7 +442,8 @@
                     <a href="#mission" class="footer-link">Mission</a>
                     <a href="#vision" class="footer-link">Vision</a>
                     <a href="#meetups" class="footer-link">Meetups</a>
-                    <a href="show-and-tell.html" class="footer-link">Show and Tell</a>
+                    <a href="college-outreach.html" class="footer-link">College Outreach</a>
+                    <a href="ai-jobs.html" class="footer-link">AI Jobs</a>
                     <a href="#contact" class="footer-link">Contact</a>
                 </div>
             </div>
