@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepak Koul - Senior Engineering Leader | Pune AI Collective</title>
+    <meta name="description" content="Deepak Koul - Senior Manager, Software Engineering at Red Hat. 19+ years experience in engineering leadership, test automation, and AI-powered workflows. Founder of Pune AI Collective.">
+    <meta name="author" content="Pune AI Collective">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="Deepak Koul - Senior Engineering Leader">
+    <meta property="og:description" content="Senior Manager, Software Engineering at Red Hat. 19+ years in engineering leadership. Founder of Pune AI Collective.">
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://puneaicollective.org/people/deepak">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.puneaicollective.org/people/deepak">
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+          integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Custom stylesheets -->
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    <link rel="stylesheet" href="../../css/animations.css">
+
+    <style>
+        .profile-hero {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: #fff;
+            padding: 3rem 1.5rem 2rem;
+        }
+        .profile-hero-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .profile-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .profile-info {
+            flex: 1;
+            min-width: 280px;
+        }
+        .profile-name {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 0 0 0.5rem;
+            color: #fff;
+        }
+        .profile-title {
+            font-size: 1.1rem;
+            color: #94a3b8;
+            margin: 0 0 0.25rem;
+        }
+        .profile-company {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #EE0000;
+            color: #fff;
+            padding: 0.3rem 0.8rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin: 0.75rem 0;
+        }
+        .profile-tagline {
+            font-size: 0.95rem;
+            color: #cbd5e1;
+            line-height: 1.6;
+            margin-top: 1rem;
+        }
+        .profile-links {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-top: 1.25rem;
+        }
+        .profile-links a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.5rem 0.9rem;
+            background: rgba(255,255,255,0.1);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            transition: background 0.2s;
+        }
+        .profile-links a:hover {
+            background: rgba(255,255,255,0.2);
+        }
+        .profile-links .chatgpt { background: #10a37f; }
+        .profile-links .chatgpt:hover { background: #0d8a6a; }
+
+        .profile-main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+        .profile-grid {
+            display: grid;
+            grid-template-columns: 1fr 320px;
+            gap: 2rem;
+        }
+        @media (max-width: 800px) {
+            .profile-grid { grid-template-columns: 1fr; }
+        }
+        .profile-section {
+            margin-bottom: 1.75rem;
+        }
+        .profile-section h2 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #333;
+            margin: 0 0 0.75rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e5e7eb;
+        }
+        .profile-section p, .profile-section li {
+            color: #555;
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+        .profile-section ul {
+            margin: 0;
+            padding-left: 1.25rem;
+        }
+        .profile-section li {
+            margin-bottom: 0.5rem;
+        }
+        .current-role-card {
+            background: #fef3f2;
+            border-left: 4px solid #EE0000;
+            padding: 1rem 1.25rem;
+            border-radius: 0 8px 8px 0;
+        }
+        .current-role-card h3 {
+            font-size: 1rem;
+            color: #000;
+            margin: 0 0 0.25rem;
+        }
+        .current-role-card .role-meta {
+            font-size: 0.85rem;
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+        .current-role-card p {
+            font-size: 0.9rem;
+            color: #555;
+            margin: 0;
+            line-height: 1.6;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.75rem;
+        }
+        @media (max-width: 600px) {
+            .skills-grid { grid-template-columns: 1fr; }
+        }
+        .skill-card {
+            background: #f8fafc;
+            padding: 0.75rem 1rem;
+            border-radius: 8px;
+            border: 1px solid #e5e7eb;
+        }
+        .skill-card h4 {
+            font-size: 0.85rem;
+            color: #333;
+            margin: 0 0 0.4rem;
+            font-weight: 600;
+        }
+        .skill-card p {
+            font-size: 0.8rem;
+            color: #666;
+            margin: 0;
+            line-height: 1.5;
+        }
+        .sidebar-card {
+            background: #f8fafc;
+            border: 1px solid #e5e7eb;
+            border-radius: 10px;
+            padding: 1.25rem;
+            margin-bottom: 1.25rem;
+        }
+        .sidebar-card h3 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #333;
+            margin: 0 0 0.75rem;
+        }
+        .sidebar-card ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .sidebar-card li {
+            font-size: 0.85rem;
+            color: #555;
+            padding: 0.4rem 0;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .sidebar-card li:last-child {
+            border-bottom: none;
+        }
+        .sidebar-card li i {
+            width: 18px;
+            color: #666;
+            margin-right: 0.5rem;
+        }
+        .ai-cta-card {
+            background: linear-gradient(135deg, #f0fdf4 0%, #ecfeff 100%);
+            border: 1px solid #a7f3d0;
+        }
+        .ai-cta-card a {
+            display: block;
+            text-align: center;
+            padding: 0.6rem 1rem;
+            background: #4A90E2;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            margin-top: 0.75rem;
+        }
+        .ai-cta-card a:hover {
+            background: #3a7bc8;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #4A90E2;
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Deepak Koul",
+      "jobTitle": "Senior Manager, Software Engineering",
+      "description": "Senior engineering leader with 19+ years of experience building and scaling technology teams. Currently at Red Hat. Founder of Pune AI Collective.",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Red Hat",
+        "url": "https://www.redhat.com"
+      },
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Masters in Computer Applications"
+      },
+      "knowsAbout": ["Software Engineering", "Test Automation", "AI/ML", "DevOps", "CI/CD", "Team Leadership"],
+      "url": "https://www.puneaicollective.org/people/deepak",
+      "sameAs": [
+        "https://linkedin.com/in/dkoul",
+        "https://github.com/dkoul"
+      ]
+    }
+    </script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="../../index.html" class="nav-logo" aria-label="Pune AI Collective Home">
+                    <img src="../../logo.png" alt="Pune AI Collective" style="height: 40px; width: auto;">
+                </a>
+            </div>
+
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="nav-menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+
+            <ul class="nav-menu" id="nav-menu" role="menubar">
+                <li class="nav-item" role="none">
+                    <a href="../../index.html#mission" class="nav-link" role="menuitem">Mission</a>
+                </li>
+                <li class="nav-item" role="none">
+                    <a href="../../index.html#meetups" class="nav-link" role="menuitem">Meetups</a>
+                </li>
+                <li class="nav-item" role="none">
+                    <a href="../../people.html" class="nav-link active" role="menuitem">People</a>
+                </li>
+                <li class="nav-item" role="none">
+                    <a href="../../index.html#contact" class="nav-link" role="menuitem">Contact</a>
+                </li>
+            </ul>
+
+            <div class="social-icons" role="complementary" aria-label="Social media links">
+                <a href="https://linkedin.com/in/dkoul" target="_blank" rel="noopener noreferrer" class="social-icon linkedin-icon" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a href="https://github.com/dkoul" target="_blank" rel="noopener noreferrer" class="social-icon github-icon" aria-label="GitHub">
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main content -->
+    <main id="main-content" role="main">
+        <!-- Profile Hero -->
+        <section class="profile-hero" itemscope itemtype="https://schema.org/Person">
+            <div class="profile-hero-content">
+                <div class="profile-header">
+                    <div class="profile-info">
+                        <h1 class="profile-name" itemprop="name">Deepak Koul</h1>
+                        <p class="profile-title" itemprop="jobTitle">Senior Manager, Software Engineering</p>
+                        <span class="profile-company">
+                            <i class="fab fa-redhat" aria-hidden="true"></i> Red Hat
+                        </span>
+                        <p class="profile-tagline">
+                            19+ years building & scaling engineering teams in India for global enterprises.
+                            AI-first engineering leader. Founder of Pune AI Collective.
+                        </p>
+                        <div class="profile-links">
+                            <a href="https://linkedin.com/in/dkoul" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn
+                            </a>
+                            <a href="https://github.com/dkoul" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github" aria-hidden="true"></i> GitHub
+                            </a>
+                            <a href="mailto:kouldeep@gmail.com">
+                                <i class="fas fa-envelope" aria-hidden="true"></i> Email
+                            </a>
+                            <a href="https://chatgpt.com/?hints=search&q=Evaluate%20Deepak%20Koul%20as%20a%20candidate%20for%20an%20Engineering%20Manager%20or%20Head%20of%20Engineering%20role.%20Read%20his%20CV%20at%20https%3A%2F%2Fwww.puneaicollective.org%2Fpeople%2Fdeepak%2Fcv.txt%20and%20his%20LinkedIn%20at%20https%3A%2F%2Fwww.linkedin.com%2Fin%2Fdkoul%2F.%20Summarize%20his%20technical%20expertise%2C%20leadership%20philosophy%2C%20product%20thinking%2C%20AI%20experience%2C%20public%20speaking%2C%20open%20source%20contributions%2C%20community%20leadership%2C%20and%20evidence%20of%20organizational%20impact.%20Identify%20his%20unique%20strengths%2C%20possible%20gaps%2C%20the%20types%20of%20organizations%20where%20he%20would%20excel%2C%20and%20end%20with%20a%20hiring%20recommendation%20and%20confidence%20level." target="_blank" rel="noopener noreferrer" class="chatgpt">
+                                <i class="fas fa-robot" aria-hidden="true"></i> Ask ChatGPT
+                            </a>
+                                                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Profile Content -->
+        <div class="profile-main">
+            <div class="profile-grid">
+                <!-- Main Content -->
+                <div class="profile-content">
+                    <section class="profile-section">
+                        <h2>Current Role</h2>
+                        <div class="current-role-card">
+                            <h3>Senior Manager, Software Engineering, Global</h3>
+                            <p class="role-meta">Red Hat | Pune, India | Jan 2023 - Present</p>
+                            <p>Leading multiple engineering and QA teams delivering enterprise software to global partners. Key leader in ecosystem engineering, driving AI adoption with 90% agentic SDLC adoption.</p>
+                        </div>
+                    </section>
+
+                    <section class="profile-section">
+                        <h2>Key Achievements</h2>
+                        <ul>
+                            <li><strong>AI Thought Leadership:</strong> Keynote at ATAGTR 2025 & FOSSASIA 2026. Built first AI-native team in India with MCP layers across all services.</li>
+                            <li><strong>India Team Scaling:</strong> 12+ years growing Red Hat India teams from senior IC to senior management.</li>
+                            <li><strong>Open Source:</strong> TalkToTalentPool (RAG for resumes), Laburnum (monitoring), VSCode xpath2css plugin.</li>
+                            <li><strong>14+ Years Speaking:</strong> DevConf Boston, FOSSASIA Bangkok, SeleniumConf, ATAGTR.</li>
+                        </ul>
+                    </section>
+
+                    <section class="profile-section">
+                        <h2>Core Competencies</h2>
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <h4><i class="fas fa-users" aria-hidden="true"></i> Leadership</h4>
+                                <p>India Ops Scaling, Distributed Teams, Talent Development, Vendor Management</p>
+                            </div>
+                            <div class="skill-card">
+                                <h4><i class="fas fa-cogs" aria-hidden="true"></i> Engineering</h4>
+                                <p>Test Automation, CI/CD, Agile/DevOps, Release Management</p>
+                            </div>
+                            <div class="skill-card">
+                                <h4><i class="fas fa-code" aria-hidden="true"></i> Technology</h4>
+                                <p>AI/ML, Python, Java, Selenium, Cypress, AWS/GCP, K8s</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="profile-section">
+                        <h2>Community Leadership</h2>
+                        <p>Founded <strong>Pune AI Collective</strong> - community for practical AI knowledge sharing. Organizing meetups, facilitating sessions, building partnerships across Pune's AI ecosystem.</p>
+                    </section>
+
+                    <a href="../../people.html" class="back-link">
+                        <i class="fas fa-arrow-left" aria-hidden="true"></i> Back to all people
+                    </a>
+                </div>
+
+                <!-- Sidebar -->
+                <aside>
+                    <div class="sidebar-card">
+                        <h3><i class="fas fa-briefcase" aria-hidden="true"></i> Career Timeline</h3>
+                        <ul>
+                            <li><strong>2023-Present</strong><br>Sr. Manager, Software Eng. @ Red Hat</li>
+                            <li><strong>2021-2022</strong><br>Software Eng. Manager @ Red Hat</li>
+                            <li><strong>2018-2021</strong><br>Manager, Quality Eng. @ Red Hat</li>
+                            <li><strong>2017-2018</strong><br>Assoc. Manager, QE @ Red Hat</li>
+                            <li><strong>2012-2017</strong><br>Sr. Quality Engineer @ Red Hat</li>
+                            <li><strong>2007-2012</strong><br>QA Technical Lead @ PTC</li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3><i class="fas fa-graduation-cap" aria-hidden="true"></i> Education</h3>
+                        <ul>
+                            <li>Masters in Computer Applications (2007)</li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3><i class="fas fa-microphone" aria-hidden="true"></i> Speaking</h3>
+                        <ul>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> MCP Dev Summit</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> FOSSASIA 2026</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> ATAGTR 2025</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> SeleniumConf</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> DevConf Boston</li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-card ai-cta-card">
+                        <h3><i class="fas fa-robot" aria-hidden="true"></i> For AI Agents</h3>
+                        <p style="font-size: 0.85rem; color: #555; margin: 0;">Full machine-readable CV with complete work history.</p>
+                        <a href="cv.txt">
+                            <i class="fas fa-file-alt" aria-hidden="true"></i> Download CV (Plain Text)
+                        </a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-content">
+                <p class="footer-text">&copy; 2025 Pune AI Collective. Where AI minds meet, innovate, and grow.</p>
+                <div class="footer-links">
+                    <a href="../../index.html#mission" class="footer-link">Mission</a>
+                    <a href="../../index.html#meetups" class="footer-link">Meetups</a>
+                    <a href="../../people.html" class="footer-link">People</a>
+                    <a href="../../index.html#contact" class="footer-link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+    <script src="../../js/navigation.js"></script>
+</body>
+</html>

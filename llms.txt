@@ -16,6 +16,19 @@ The Pune AI Collective brings together AI enthusiasts, researchers, and professi
 /show-and-tell.html — Submit AI projects and innovations
 Community members can share their AI projects, experiments, research, and innovations with the broader Pune AI community through this submission portal.
 
+/people.html — Core team members directory
+Meet the core team behind Pune AI Collective. Each member has a dedicated page with their profile and machine-readable CV.
+
+## People (Individual Profiles & CVs)
+
+/people/deepak/ — Profile page for Deepak Koul, Community Lead
+/people/deepak/cv.txt — Machine-readable CV for Deepak Koul
+Founding member and community lead. Organizes meetups, facilitates knowledge sharing, and builds partnerships across Pune's AI ecosystem.
+
+/people/abhishek/ — Profile page for Abhishek Kumar, Core Team Member
+/people/abhishek/cv.txt — Machine-readable CV for Abhishek Kumar
+Core team member and speaker at DPGU AI Meetup on AI in Real-World Applications.
+
 ## Resources
 
 /assets/Monsoon-meetup-blog.pdf — Summary of the Monsoon Meetup (August 2025)

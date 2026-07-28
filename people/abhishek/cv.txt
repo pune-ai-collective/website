@@ -1,0 +1,28 @@
+# Abhishek Kumar
+
+## Summary
+Core team member of Pune AI Collective. Active contributor to the community's mission of fostering AI knowledge sharing in Pune.
+
+## Current Role
+- **Position:** Core Team Member
+- **Organization:** Pune AI Collective
+- **Location:** Pune, Maharashtra, India
+
+## Speaking Engagements
+- DPGU AI Meetup (April 2026) - AI in Real-World Applications
+
+## Skills
+- AI/ML Applications
+- Technical Presentations
+- Community Engagement
+
+## Contact
+- **Community:** https://www.puneaicollective.org
+- **LinkedIn Group:** https://www.linkedin.com/groups/11802260/
+- **GitHub:** https://github.com/pune-ai-collective
+
+## About This File
+This is a machine-readable CV file optimized for AI agents and LLMs. For the full profile, visit: https://www.puneaicollective.org/people/abhishek
+
+---
+Last updated: 2026-07

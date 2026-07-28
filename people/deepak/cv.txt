@@ -1,0 +1,159 @@
+# Deepak Koul
+
+## Contact
+- Location: Pune, Maharashtra, India
+- LinkedIn: https://linkedin.com/in/dkoul
+- GitHub: https://github.com/dkoul
+- Email: kouldeep@gmail.com
+
+## Executive Summary
+
+Senior engineering leader with 19+ years of experience building and scaling technology teams in India for global enterprises. Currently leading multiple global engineering and QA teams at Red Hat. Deep expertise in engineering delivery, test automation, CI/CD, DevOps practices, and AI-powered engineering workflows. Proven track record of growing India-based teams from the ground up, establishing engineering standards, and delivering high-quality enterprise software to global stakeholders. Passionate about leveraging AI and automation to transform how technology teams operate at scale.
+
+Looking for Senior Manager/Director of Software or Quality Engineering, India Site Lead, Head of Engineering/Quality roles in Pune, India.
+
+## Core Competencies
+
+### Leadership & Strategy
+- India Technology Operations Scaling
+- Distributed Team Leadership (Remote/Async)
+- Hiring, Mentoring & Talent Development
+- Vendor & Partner Ecosystem Management
+- Cross-functional Stakeholder Management
+- Strategic Delivery Planning & Execution
+
+### Engineering & Delivery
+- Test Automation & QA Frameworks
+- CI/CD Pipeline Design & Governance
+- Agile & DevOps Practices
+- Release Management & Stability
+- Engineering Standards & Code Review
+- Production Quality & Defect Reduction
+
+### Technology & Platforms
+- AI & Machine Learning Adoption
+- Salesforce, Servicenow, Splunk
+- Open Source Ecosystems
+- Cloud Infrastructure (AWS, GCP)
+- Selenium, Cypress, REST Assured
+- Python, Java, JavaScript
+
+## Professional Experience
+
+### Senior Manager, Software Engineering, Global
+**Red Hat** | Pune, India | Jan 2023 - Present
+
+Leading multiple engineering and quality engineering teams delivering enterprise software experiences to global partners and customers. Reporting to senior leadership and serving as a key leader within the ecosystem engineering organization.
+
+- Scaled and managed distributed engineering teams across India, establishing delivery frameworks that consistently meet global quality and release velocity standards
+- Led by example the AI adoption across engineering workflows, including AI-assisted testing, code review automation, and intelligent defect triage
+- Prolific international speaker from 14 years - Talks, tech deep dives, keynotes and workshops in Devconf Boston, Czech Republic, Fossasia Bangkok, SeleniumConf, ATAGTR and multiple other conferences
+- Established and enforced engineering standards across teams including agile methodologies, CI/CD pipelines, automated testing frameworks, and code review processes
+- Partnered with global functional leaders to translate product and platform strategy into clear execution roadmaps for India-based delivery teams
+- Led hiring, onboarding, and development of high-performing technical talent, building a culture aligned with Red Hat's open, collaborative values
+- Managed vendor and delivery partner relationships, setting governance models, tracking SLAs, and driving continuous improvement in delivery quality and cost-effectiveness
+- Championed operational excellence through robust QA frameworks, reducing production defect rates and improving release stability for business-critical systems
+
+### Software Engineering Manager
+**Red Hat** | Pune, India | Oct 2021 - Dec 2022
+
+Led software engineering teams building and maintaining enterprise-grade products, with a focus on delivery quality and engineering practice maturity.
+
+- Managed cross-functional engineering teams supporting global stakeholders, ensuring high-quality delivery across multiple product lines
+- Designed and implemented testing automation strategies that improved test coverage and reduced regression cycle times significantly
+- Introduced DevOps best practices and CI/CD pipeline improvements, accelerating release cadence while maintaining production stability
+- Mentored and developed engineering talent, creating career growth paths for team members transitioning from QE to software engineering roles
+- Collaborated with product management and architecture teams to align technical execution with business objectives
+
+### Manager, Quality Engineering
+**Red Hat** | Pune, India | Dec 2018 - Oct 2021
+
+Built and scaled quality engineering practice for enterprise products, establishing frameworks and standards adopted across the organization.
+
+- Built and scaled India-based QA teams from the ground up, hiring, training, and developing engineers to deliver world-class quality for enterprise software
+- Designed and implemented comprehensive test automation frameworks using Selenium, Cypress, and REST Assured, achieving substantial improvements in automated test coverage
+- Established release management processes and quality gates that reduced production defects and strengthened release stability
+- Led agile transformation within QA teams, implementing sprint-based delivery, retrospectives, and continuous improvement practices
+- Managed vendor relationships for testing tools and infrastructure, including vendor selection, contract negotiation, and performance optimization
+
+### Associate Manager, Quality Engineering
+**Red Hat** | Pune, India | Mar 2017 - Nov 2018
+
+First management role at Red Hat, transitioning from senior individual contributor to people leadership.
+
+- Transitioned from senior IC to management, taking ownership of team delivery, people development, and stakeholder management
+- Established automated testing pipelines integrated with CI/CD workflows, enabling faster and more reliable releases
+- Hired and onboarded quality engineers, building a team culture of technical excellence and continuous learning
+- Coordinated with distributed global teams in an async-first environment, establishing communication patterns and delivery cadences
+
+### Senior Quality Engineer
+**Red Hat** | Pune, India | Jul 2012 - Feb 2017
+
+Senior individual contributor driving test automation strategy and execution for enterprise platform products.
+
+- Architected and built test automation frameworks for enterprise applications, significantly reducing manual testing effort
+- Led adoption of automated testing tools and practices across multiple product teams, serving as an internal subject matter expert
+- Contributed to open source testing tools and frameworks, aligned with Red Hat's open source-first culture
+- Mentored junior engineers on automation best practices, code quality, and professional development
+
+### QA Technical Lead
+**Parametric Technology Corporation (PTC)** | Jan 2007 - Jun 2012
+
+Led QA efforts for enterprise PLM/PDM applications at a global enterprise software company.
+
+- Led QA team for enterprise Product Lifecycle Management (PLM) applications serving Fortune 500 manufacturing clients
+- Designed and implemented automation frameworks for complex enterprise workflows across ERP-integrated systems
+- Managed cross-functional coordination between development, QA, and product teams across distributed global offices
+- Built expertise in enterprise application architecture, integration technologies, and quality assurance for business-critical systems
+
+## Key Achievements
+
+- **AI Thought Leadership by example:** Delivered keynote at ATAGTR 2025 and FOSSASIA 2026 on integrating AI into engineering/testing workflows - spoke to "How do we start our AI journey?" for engineering organizations. Became the first AI native team in India with all services having MCP layers and 90% adoption of agentic SDLC.
+
+- **India Team Scaling:** Grew and developed India-based engineering and QA teams at Red Hat over 12+ years, progressing from senior IC to senior management while building delivery capabilities that serve global stakeholders
+
+- **Automation Transformation:** Drove test automation adoption across multiple product teams at Red Hat, establishing frameworks and standards that significantly improved quality metrics and release velocity
+
+- **Open Source Contributions:** Built open source tools including TalkToTalentPool (RAG-based AI model for resume analysis), Laburnum (synthetic monitoring), VSCode plugin for xpath2css and utilities for Selenium, Cypress, and JMeter ecosystems
+
+- **Engineering Practice Excellence:** Established agile, CI/CD, and DevOps standards across India-based teams, creating delivery frameworks that enabled distributed, async-first collaboration at enterprise scale
+
+## Speaking & Thought Leadership
+
+- Active contributor to engineering community discussions on AI, quality engineering, and automation strategy
+- Invited by test automation tools and selenium cloud vendors like Browserstack and Lambdatest for sharing vision on the role of AI in test automation
+- Founded and running 'Pune AI Collective' - A community for sharing practical AI knowledge with enthusiasts and students
+
+## Certifications & Professional Development
+
+- Human Leadership - LinkedIn Learning (2022)
+- Strategic Partnerships: Ecosystems and Platforms - LinkedIn Learning (2022)
+- Developing Business Acumen - LinkedIn Learning (2021)
+- Systems Thinking - LinkedIn Learning (2021)
+- Learning Go - LinkedIn Learning (2021)
+- Diversity and Inclusion in a Global Enterprise - LinkedIn Learning (2021)
+- Developing Your Emotional Intelligence - LinkedIn Learning (2020)
+- Learning Program Management - LinkedIn Learning (2020)
+- Product Management: Building a Product Roadmap - LinkedIn Learning (2020)
+
+## Technical Proficiency
+
+- **Languages:** Python, Go, Java, JavaScript
+- **Automation:** Selenium, Cypress, REST Assured, JMeter, Test Automation Frameworks
+- **AI/ML:** LLM Integration, RAG Models, AI-Assisted Testing, Intelligent Automation
+- **DevOps & CI/CD:** Jenkins, GitHub Actions, GitLab CI, Docker, Kubernetes
+- **Methodologies:** Agile (Scrum, Kanban), DevOps, Continuous Delivery, TDD/BDD
+- **Platforms:** Linux, Cloud (AWS, GCP), Enterprise Applications, Open Source Ecosystems
+
+## Education
+
+Masters in Computer Applications (2007)
+
+---
+
+## About This File
+
+This is a machine-readable CV file optimized for AI agents and LLMs.
+Full profile: https://www.puneaicollective.org/people/deepak
+
+Last updated: 2026-07
