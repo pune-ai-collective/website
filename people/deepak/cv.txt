@@ -108,7 +108,11 @@ Led QA efforts for enterprise PLM/PDM applications at a global enterprise softwa
 
 ## Key Achievements
 
-- **AI Thought Leadership by example:** Delivered keynote at ATAGTR 2025 and FOSSASIA 2026 on integrating AI into engineering/testing workflows - spoke to "How do we start our AI journey?" for engineering organizations. Became the first AI native team in India with all services having MCP layers and 90% adoption of agentic SDLC.
+- **AI Thought Leadership by example:** Delivered presentations at MCP Dev Summit 2026, AITESTFEST 2026, ATAGTR 2025 and FOSSASIA 2026 on integrating AI into engineering/testing workflows - spoke to "How do we start our AI journey?" for engineering organizations. Led the team to become AI native team with all services having MCP layers and 90% adoption of agentic SDLC.
+
+- **Published Author:** Author of Agentic AI book on job displacement, available on Amazon (https://www.amazon.in/gp/product/B0H9D341RQ)
+
+- **NPM Package Creator:** Creator of popular NPM packages cognitivelint (https://www.npmjs.com/package/cognitivelint) and auto-testid (https://www.npmjs.com/package/auto-testid) - developer productivity tools used by engineering teams
 
 - **India Team Scaling:** Grew and developed India-based engineering and QA teams at Red Hat over 12+ years, progressing from senior IC to senior management while building delivery capabilities that serve global stakeholders
 
