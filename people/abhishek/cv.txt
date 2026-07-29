@@ -1,105 +1,111 @@
 # Abhishek Kumar
 
 ## Contact
-- Location: Pune, Maharashtra, India
-- LinkedIn: https://www.linkedin.com/in/abhiskum/
+- LinkedIn: https://linkedin.com/in/abhiskum
 - Medium: https://medium.com/@abhishek68
 - Website: https://devninja.in
 
-## Professional Summary
+## Summary
 
-Visionary Technical Architect and Senior Principal Software Engineer with over 8 years of experience driving mission-critical, end-to-end enterprise solutions at Red Hat. Recognized industry-wide as a subject matter expert in cross-portfolio integrations, massive-scale data migrations, and applied AI enablement. Proven track record of generating significant revenue savings, scaling infrastructure to managed PaaS, and leading global open-source communities. Currently operating at a Distinguished Engineer level, architecting multi-year technological roadmaps and driving strategic cross-company AI adoption, including leading the Red Hat IT AI Factory and MCP POD.
+Enterprise Architect and Senior Principal Software Engineer with 18+ years of experience designing, modernizing, and scaling enterprise software platforms across cloud-native, distributed, and AI-enabled ecosystems. Specialize in defining architecture for business-critical platforms, driving large-scale technology transformations, and building resilient systems that integrate seamlessly across heterogeneous enterprise landscapes.
 
-## Core Competencies
+Proven track record of leading architectural initiatives spanning Master Data Management (MDM), enterprise integrations, cloud migrations, event-driven platforms, and AI-powered automation while balancing scalability, security, reliability, and long-term maintainability.
 
-### Enterprise Architecture & Cloud
-- Microservices
-- AWS (S3, Managed PaaS)
-- Red Hat OpenShift Dedicated
-- GCP
-- Quarkus
+Architected multiple strategic platforms that replaced commercial SaaS products with internally engineered solutions, significantly reducing operational cost while improving flexibility, governance, and delivery velocity.
+
+Experienced in designing high-throughput distributed systems, defining enterprise integration patterns, evolving data contracts, and establishing engineering standards adopted across organizations.
+
+Currently focused on enterprise AI platforms, Agentic AI, LLM integration, Model Context Protocol (MCP), intelligent workflow automation, and production-grade AI infrastructure.
+
+Passionate about enabling engineering organizations through technical leadership, architectural governance, mentoring, and pragmatic innovation.
+
+## Experience
+
+### Senior Principal Software Engineer
+**Red Hat**
+
+- Define architecture and technical direction for enterprise AI initiatives as part of the Red Hat IT AI Factory
+- Lead architecture for AI integration platforms enabling model onboarding, skill orchestration, agent lifecycle management, deployment pipelines, governance, and enterprise security controls
+- Establish reusable architectural patterns for production-ready AI systems, enabling multiple engineering teams to accelerate AI adoption consistently
+- Architected the strategic modernization of Product and Party Master Data Management platforms by replacing proprietary Informatica SaaS solutions with internally engineered platforms
+- Defined target architecture, migration strategy, integration patterns, and rollout approach that enabled business continuity with zero downtime while significantly reducing licensing and operational costs
+- Redesigned catalog architecture for Derived and Alternate SKUs, simplifying downstream event processing and improving Kafka-based analytical data flows
+- Architect enterprise integration platforms connecting business-critical applications through scalable APIs, asynchronous messaging, and event-driven workflows
+- Designed enterprise orchestration platforms including Hydra and Technology Partner Data Hub, enabling retirement of legacy Salesforce implementations while simplifying partner onboarding
+- Establish architectural standards for service communication, data contracts, resiliency, observability, and operational scalability across integration services
+- Led architecture for migration of enterprise applications including Bugzilla and Jira from monolithic deployments to cloud-native microservices running on Red Hat OpenShift Dedicated
+- Architected high-performance object storage solutions migrating enterprise attachment infrastructure from NFS to Amazon S3, supporting uploads exceeding 250 GB while improving performance, scalability, and operational efficiency
+- Drive adoption of AI capabilities across enterprise platforms using LangChain, IBM watsonx Orchestrate, Vertex AI (Gemini), and Llama Stack
+- Design agent-based workflows, AI-assisted data validation, intelligent document processing, and automated operational processes that augment enterprise business workflows
+- Establish architecture patterns for integrating LLMs into enterprise systems while maintaining governance, security, compliance, and responsible AI practices
+- Lead architecture reviews, security design assessments, and enterprise compliance initiatives across strategic platforms
+- Drive Enterprise Security Standards (ESS), ASCA readiness, threat modeling, and secure-by-design practices as integral components of solution architecture
+- Partner with cross-functional engineering, infrastructure, security, and product organizations to ensure architectural consistency across enterprise platforms
+
+## Technical Skills
+
+### Architecture & Design
+- Enterprise Solution Architecture
+- Distributed Systems Design
+- Event-Driven Architecture
+- Domain-Driven Design (DDD)
+- Integration Architecture
+- API Strategy & Platform Engineering
+- Cloud-Native Architecture
+- Architecture Governance
+
+### Cloud & Infrastructure
+- Red Hat OpenShift
+- AWS
+- Google Cloud Platform (GCP)
+- Kubernetes
 - Kafka
+- Microservices
+- Quarkus
+- Spring Boot
+- Apache Camel
 
-### Data & AI Engineering
+### AI & Machine Learning
+- Enterprise AI Platforms
+- Agentic AI
+- LLM Integration
+- LangChain
+- IBM watsonx Orchestrate
 - Vertex AI (Gemini)
-- DistilBERT
-- Watsonx Orchestrate
-- Llama-stack
-- Dataverse
-- Snowflake
-
-### Platform Leadership
-- Hydra Platform
-- Master Data Management (MDM)
-- Technology Partner Data Hub
-- Bugzilla
-- Jira
+- Llama Stack
+- Model Context Protocol (MCP)
+- AI Workflow Automation
 
 ### Security & Compliance
-- ASCA Readiness
+- Secure Architecture
 - Enterprise Security Standards (ESS)
 - Threat Modeling
 - RBAC
+- Compliance Architecture
+- Architecture Reviews
 
-## Professional Experience
+### Leadership
+- Engineering Mentorship
+- Technical Leadership
+- Architecture Governance
 
-### Senior Principal Software Engineer / Technical Architect
-**Red Hat** | Pune, India
+## Technical Leadership
 
-#### AI Enterprise Execution & Factory Leadership
-- Leading the MCP POD and contributing to the overall architecture of the Red Hat IT AI Factory
-- Designing the pipeline to configure models, create skills and agents, and deploy them into production while ensuring all enterprise compliance and security checks are met
+- Provide architectural guidance across multiple engineering organizations spanning enterprise applications, integration platforms, AI initiatives, and cloud infrastructure
+- Mentor senior engineers and technical leads on system design, architectural decision-making, engineering excellence, and technology strategy
+- Drive adoption of reusable engineering patterns, platform standards, and architectural best practices across teams
 
-#### Harbor & Party Service Architecture
-- Led the overall architecture, design, and implementation to replace Informatica C360 with an in-house Party Service solution, resulting in significant cost savings and zero downtime during the November go-live
-- Drove a major catalog architecture shift in Harbor for Derived and Alternate SKUs, improving downstream Kafka paths for analytics
+## Speaking & Community
 
-#### AI Adoption & Automation
-- Spearheaded AI integration across Party and Product MDM by layering gibberish detection via FastAPI (regex, DistilBERT) and pattern analysis using Vertex AI
-- Evaluated and developed proof-of-concepts utilizing IBM Watsonx Orchestrate for automation within Dataverse ecosystems
+- Speaker at international technology conferences including DevConf CZ, DevConf.IN, FOSSASIA, and Red Hat Summit
+- Selected by the Linux Foundation to deliver technical sessions and workshops on Model Context Protocol (MCP) and enterprise AI development
+- Founder of Pune AI Collective, an engineering community focused on practical AI adoption, enterprise architecture, and developer education
+- Conduct internal workshops on Agentic AI, MCP, LLM platforms, and enterprise AI engineering for global engineering teams
 
-#### Mission-Critical Data Infrastructure
-- Architected the Case Attachments workflow migration from NFS to AWS S3, enabling lightning-fast uploads/downloads (up to 250+ GB) and massive revenue savings with zero maintenance costs
+## Thought Leadership
 
-#### Enterprise Platform Migrations
-- Orchestrated the massive architectural migrations of both Bugzilla and Jira from monolithic structures to microservices on Red Hat OpenShift Dedicated (Managed PaaS)
-
-#### Ecosystem & Partner Integration
-- Designed and implemented the Hydra Platform orchestration layer and the Technology Partner Data Hub (TPDH) to deprecate legacy SFDC instances
-- Engineered an AWS-based Red Hat Secure FTP solution to replace legacy Dropbox
-- Built the ShadowBot backend framework using Quarkus and GCP
-
-#### Compliance Leadership
-- Proactively owned and closed all enterprise compliance activities
-- Led ASCA readiness and Enterprise Security Standards (ESS) submissions for major releases
-- Integrated security directly into the architecture
-
-## Global Leadership & Community Impact
-
-### Speaking Engagements
-- **Linux Foundation MCP Dev Summit (June 2026):** Selected to present keynote and lead workshop on MCP templates
-- **DevConf CZ:** Technical talks and workshops
-- **DevConf.IN:** Technical presentations
-- **FOSSASIA:** International conference speaker
-- **Red Hat Summit:** Technical deep dives
-- **DPGU AI Meetup (April 2026):** AI in Real-World Applications
-
-### Community Leadership
-- **Pune AI Collective Co-Founder:** Founded and continuously leads the Pune AI Collective, bringing together industry professionals and academic students to establish a sustainable AI learning ecosystem
-- Delivered specialized talk on Llama-stack and AI templates for the collective
-
-### Cross-Organizational Mentorship
-- Conducts Agent/MCP workshops across Red Hat offices in Pune and Bangalore
-- Regularly leads internal AI hackathons to convert concepts into production-ready patterns
-
-## Technical Publications & Thought Leadership
-
-- **Author, Medium & LinkedIn:** Frequently publishes popular, globally visible technical deep dives, including architecture behind the Lightning-Fast Case Attachments migration
-- **Author, PragmaticNotes:** Published external architectural blogs on efficient enterprise patterns
-
-## Education
-
-Engineering Degree
+- Publish technical articles on enterprise architecture, cloud-native engineering, AI platforms, distributed systems, and software modernization
+- Author architecture deep-dives covering large-scale file processing, enterprise integrations, cloud migration strategies, and production AI systems
 
 ---
 
