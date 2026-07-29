@@ -1,28 +1,111 @@
 # Abhishek Kumar
 
-## Summary
-Core team member of Pune AI Collective. Active contributor to the community's mission of fostering AI knowledge sharing in Pune.
-
-## Current Role
-- **Position:** Core Team Member
-- **Organization:** Pune AI Collective
-- **Location:** Pune, Maharashtra, India
-
-## Speaking Engagements
-- DPGU AI Meetup (April 2026) - AI in Real-World Applications
-
-## Skills
-- AI/ML Applications
-- Technical Presentations
-- Community Engagement
-
 ## Contact
-- **Community:** https://www.puneaicollective.org
-- **LinkedIn Group:** https://www.linkedin.com/groups/11802260/
-- **GitHub:** https://github.com/pune-ai-collective
+- Location: Pune, Maharashtra, India
+- LinkedIn: https://www.linkedin.com/in/abhiskum/
+- Medium: https://medium.com/@abhishek68
+- Website: https://devninja.in
 
-## About This File
-This is a machine-readable CV file optimized for AI agents and LLMs. For the full profile, visit: https://www.puneaicollective.org/people/abhishek
+## Professional Summary
+
+Visionary Technical Architect and Senior Principal Software Engineer with over 8 years of experience driving mission-critical, end-to-end enterprise solutions at Red Hat. Recognized industry-wide as a subject matter expert in cross-portfolio integrations, massive-scale data migrations, and applied AI enablement. Proven track record of generating significant revenue savings, scaling infrastructure to managed PaaS, and leading global open-source communities. Currently operating at a Distinguished Engineer level, architecting multi-year technological roadmaps and driving strategic cross-company AI adoption, including leading the Red Hat IT AI Factory and MCP POD.
+
+## Core Competencies
+
+### Enterprise Architecture & Cloud
+- Microservices
+- AWS (S3, Managed PaaS)
+- Red Hat OpenShift Dedicated
+- GCP
+- Quarkus
+- Kafka
+
+### Data & AI Engineering
+- Vertex AI (Gemini)
+- DistilBERT
+- Watsonx Orchestrate
+- Llama-stack
+- Dataverse
+- Snowflake
+
+### Platform Leadership
+- Hydra Platform
+- Master Data Management (MDM)
+- Technology Partner Data Hub
+- Bugzilla
+- Jira
+
+### Security & Compliance
+- ASCA Readiness
+- Enterprise Security Standards (ESS)
+- Threat Modeling
+- RBAC
+
+## Professional Experience
+
+### Senior Principal Software Engineer / Technical Architect
+**Red Hat** | Pune, India
+
+#### AI Enterprise Execution & Factory Leadership
+- Leading the MCP POD and contributing to the overall architecture of the Red Hat IT AI Factory
+- Designing the pipeline to configure models, create skills and agents, and deploy them into production while ensuring all enterprise compliance and security checks are met
+
+#### Harbor & Party Service Architecture
+- Led the overall architecture, design, and implementation to replace Informatica C360 with an in-house Party Service solution, resulting in significant cost savings and zero downtime during the November go-live
+- Drove a major catalog architecture shift in Harbor for Derived and Alternate SKUs, improving downstream Kafka paths for analytics
+
+#### AI Adoption & Automation
+- Spearheaded AI integration across Party and Product MDM by layering gibberish detection via FastAPI (regex, DistilBERT) and pattern analysis using Vertex AI
+- Evaluated and developed proof-of-concepts utilizing IBM Watsonx Orchestrate for automation within Dataverse ecosystems
+
+#### Mission-Critical Data Infrastructure
+- Architected the Case Attachments workflow migration from NFS to AWS S3, enabling lightning-fast uploads/downloads (up to 250+ GB) and massive revenue savings with zero maintenance costs
+
+#### Enterprise Platform Migrations
+- Orchestrated the massive architectural migrations of both Bugzilla and Jira from monolithic structures to microservices on Red Hat OpenShift Dedicated (Managed PaaS)
+
+#### Ecosystem & Partner Integration
+- Designed and implemented the Hydra Platform orchestration layer and the Technology Partner Data Hub (TPDH) to deprecate legacy SFDC instances
+- Engineered an AWS-based Red Hat Secure FTP solution to replace legacy Dropbox
+- Built the ShadowBot backend framework using Quarkus and GCP
+
+#### Compliance Leadership
+- Proactively owned and closed all enterprise compliance activities
+- Led ASCA readiness and Enterprise Security Standards (ESS) submissions for major releases
+- Integrated security directly into the architecture
+
+## Global Leadership & Community Impact
+
+### Speaking Engagements
+- **Linux Foundation MCP Dev Summit (June 2026):** Selected to present keynote and lead workshop on MCP templates
+- **DevConf CZ:** Technical talks and workshops
+- **DevConf.IN:** Technical presentations
+- **FOSSASIA:** International conference speaker
+- **Red Hat Summit:** Technical deep dives
+- **DPGU AI Meetup (April 2026):** AI in Real-World Applications
+
+### Community Leadership
+- **Pune AI Collective Co-Founder:** Founded and continuously leads the Pune AI Collective, bringing together industry professionals and academic students to establish a sustainable AI learning ecosystem
+- Delivered specialized talk on Llama-stack and AI templates for the collective
+
+### Cross-Organizational Mentorship
+- Conducts Agent/MCP workshops across Red Hat offices in Pune and Bangalore
+- Regularly leads internal AI hackathons to convert concepts into production-ready patterns
+
+## Technical Publications & Thought Leadership
+
+- **Author, Medium & LinkedIn:** Frequently publishes popular, globally visible technical deep dives, including architecture behind the Lightning-Fast Case Attachments migration
+- **Author, PragmaticNotes:** Published external architectural blogs on efficient enterprise patterns
+
+## Education
+
+Engineering Degree
 
 ---
+
+## About This File
+
+This is a machine-readable CV file optimized for AI agents and LLMs.
+Full profile: https://www.puneaicollective.org/people/abhishek
+
 Last updated: 2026-07

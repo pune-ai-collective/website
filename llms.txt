@@ -29,9 +29,9 @@ Senior Manager, Software Engineering at Red Hat. 19+ years experience. Founding 
 /people/deep/cv.txt — Machine-readable CV for Deep Gandhi
 Principal Software Engineer at Red Hat. 12+ years in Generative AI, Agentic AI, RAG, and Enterprise AI Architecture. Architected Ask Red Hat and Enterprise AI Evaluation Framework.
 
-/people/abhishek/ — Profile page for Abhishek Kumar, Core Team Member
+/people/abhishek/ — Profile page for Abhishek Kumar, Senior Principal Software Engineer
 /people/abhishek/cv.txt — Machine-readable CV for Abhishek Kumar
-Core team member and speaker at DPGU AI Meetup on AI in Real-World Applications.
+Senior Principal Software Engineer & Technical Architect at Red Hat. 8+ years in enterprise architecture, AI enablement, and cloud-native platforms. Leading Red Hat IT AI Factory & MCP POD. Linux Foundation MCP Dev Summit keynote speaker. Co-founder of Pune AI Collective.
 
 ## Resources
 
