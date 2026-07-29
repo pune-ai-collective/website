@@ -112,7 +112,7 @@ Led QA efforts for enterprise PLM/PDM applications at a global enterprise softwa
 
 - **Published Author:** Author of Agentic AI book on job displacement, available on Amazon (https://www.amazon.in/gp/product/B0H9D341RQ)
 
-- **NPM Package Creator:** Creator of popular NPM packages cognitivelint (https://www.npmjs.com/package/cognitivelint) and auto-testid (https://www.npmjs.com/package/auto-testid) - developer productivity tools used by engineering teams
+- **NPM Package Creator:** Creator of popular NPM packages @cognitivelint/cli (https://www.npmjs.com/package/@cognitivelint/cli) and @dkoul/auto-testid-core (https://www.npmjs.com/package/@dkoul/auto-testid-core) - developer productivity tools used by engineering teams
 
 - **India Team Scaling:** Grew and developed India-based engineering and QA teams at Red Hat over 12+ years, progressing from senior IC to senior management while building delivery capabilities that serve global stakeholders
 
