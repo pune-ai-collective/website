@@ -1,0 +1,181 @@
+# Deep Gandhi
+
+## Contact
+- Location: Pune, Maharashtra, India
+- Email: gandhideep91@gmail.com
+- LinkedIn: https://www.linkedin.com/in/dgandhi91/
+- GitHub: https://github.com/dgandhi91
+
+## Summary
+
+Principal Software Engineer with 12+ years of experience designing and delivering enterprise software and production AI systems. Specialized in Generative AI, Agentic AI, Retrieval-Augmented Generation (RAG), AI evaluation, enterprise search, and cloud-native platforms.
+
+Experienced in leading technical architecture for enterprise AI initiatives, building scalable AI platforms, and translating complex business requirements into production-ready solutions. Passionate about developing reliable, observable, and governable AI systems that improve customer and engineer productivity.
+
+## Professional Experience
+
+### Principal Software Engineer
+**Red Hat** | Pune, India
+
+Lead architecture and technical direction for enterprise AI initiatives, collaborating across engineering, product, and leadership teams to deliver production-ready AI capabilities.
+
+#### Enterprise AI Assistant (Ask Red Hat)
+Enterprise AI assistant supporting customer self-service and troubleshooting.
+
+- Architected an Agentic RAG platform for enterprise support
+- Designed hybrid retrieval and re-ranking pipelines to improve answer quality
+- Optimized inference performance through prompt and token management
+- Improved response grounding and reduced hallucinations using evaluation-driven improvements
+- Guided technical direction across multiple engineering teams
+
+Technologies: LLMs, LangGraph, LangChain, GraphQL, Solr, vLLM, Kubernetes, OpenShift
+
+#### AI Case Summarization
+AI-powered summarization for enterprise customer support cases.
+
+- Designed scalable summarization workflows for long-running support cases
+- Built evaluation datasets and quality metrics to measure summary accuracy
+- Improved summarization quality through prompt engineering and iterative evaluation
+- Reduced manual effort for support engineers by automating case analysis
+
+Technologies: LLMs, Prompt Engineering, AI Evaluation
+
+#### Portal Case Management (Conversational Support Agent)
+Natural language interface for enterprise case lifecycle management.
+
+- Designed conversational workflows for case creation, updates, retrieval, and management
+- Integrated AI agents with enterprise case management systems using secure tool execution
+- Implemented intelligent intent routing and multi-step task execution
+- Defined evaluation metrics for tool selection, routing accuracy, and task completion
+
+Technologies: Agentic AI, MCP, LangGraph, REST APIs, GraphQL
+
+#### Enterprise AI Evaluation Framework
+Designed a standardized evaluation platform covering the complete AI lifecycle.
+
+Capabilities:
+- Retrieval evaluation
+- Generation evaluation
+- Agent evaluation
+- Tool evaluation
+- Hallucination detection
+- Faithfulness and context precision measurement
+- LLM-as-a-Judge evaluation
+- Production monitoring and tracing
+- Feedback analysis and continuous quality improvement
+
+### Software Engineer (Previous)
+Designed and developed enterprise web applications and backend services using Java and modern open-source technologies.
+
+- Backend application development
+- REST API development
+- Microservices
+- Database design
+- Cloud-native application development
+
+## Technical Skills
+
+### Artificial Intelligence
+- Generative AI
+- Agentic AI
+- Large Language Models (LLMs)
+- Retrieval-Augmented Generation (RAG)
+- Prompt Engineering
+- AI Evaluation
+- AI Governance
+- LLM-as-a-Judge
+
+### AI Frameworks
+- LangGraph
+- LangChain
+- LlamaIndex
+- Model Context Protocol (MCP)
+
+### Programming Languages
+- Java
+- Python
+
+### Backend Technologies
+- Spring Boot
+- REST APIs
+- GraphQL
+
+### Search & Retrieval
+- Solr
+- BM25
+- Hybrid Search
+- Re-ranking
+- Embeddings
+
+### Databases
+- PostgreSQL
+- PGVector
+- ChromaDB
+- SQLite
+
+### Cloud & Infrastructure
+- Kubernetes
+- OpenShift
+- Docker
+- Podman
+- GitLab CI/CD
+- vLLM
+
+### Observability
+- Langfuse
+- Evaluation Pipelines
+- Distributed Tracing
+
+### AI Models
+- IBM Granite
+- Llama
+- Qwen
+- Mistral
+
+## Core Expertise
+
+- Enterprise AI Architecture
+- AI Platform Engineering
+- Agentic AI Systems
+- Conversational AI
+- Knowledge Retrieval
+- Enterprise Search
+- AI Evaluation & Governance
+- LLM Infrastructure
+- Cloud Native Engineering
+- Distributed Systems
+- Software Architecture
+- Technical Leadership
+- Cross-functional Collaboration
+
+## Selected Impact
+
+- Architected production AI systems supporting enterprise customer support
+- Established AI evaluation and governance practices for production deployments
+- Built scalable retrieval and inference architectures for enterprise AI applications
+- Designed conversational AI capabilities for enterprise case management
+- Improved AI quality through evaluation-driven development and production monitoring
+- Mentored engineers and influenced technical strategy across multiple teams
+- Delivered AI capabilities contributing to approximately $14.9M in business impact
+
+## Education
+
+Bachelor of Engineering, Computer Engineering
+
+## Interests
+
+- Enterprise AI
+- Agentic AI
+- Open Source AI
+- Knowledge Systems
+- Software Architecture
+- Distributed Systems
+
+---
+
+## About This File
+
+This is a machine-readable CV file optimized for AI agents and LLMs.
+Full profile: https://www.puneaicollective.org/people/deep
+
+Last updated: 2026-07

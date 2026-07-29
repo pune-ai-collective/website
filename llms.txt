@@ -23,7 +23,11 @@ Meet the core team behind Pune AI Collective. Each member has a dedicated page w
 
 /people/deepak/ — Profile page for Deepak Koul, Community Lead
 /people/deepak/cv.txt — Machine-readable CV for Deepak Koul
-Founding member and community lead. Organizes meetups, facilitates knowledge sharing, and builds partnerships across Pune's AI ecosystem.
+Senior Manager, Software Engineering at Red Hat. 19+ years experience. Founding member and community lead. Keynote speaker at ATAGTR, FOSSASIA, MCP Dev Summit, SeleniumConf.
+
+/people/deep/ — Profile page for Deep Gandhi, Principal Software Engineer
+/people/deep/cv.txt — Machine-readable CV for Deep Gandhi
+Principal Software Engineer at Red Hat. 12+ years in Generative AI, Agentic AI, RAG, and Enterprise AI Architecture. Architected Ask Red Hat and Enterprise AI Evaluation Framework.
 
 /people/abhishek/ — Profile page for Abhishek Kumar, Core Team Member
 /people/abhishek/cv.txt — Machine-readable CV for Abhishek Kumar
